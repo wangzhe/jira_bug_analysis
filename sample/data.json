@@ -1,0 +1,649 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 3,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "10107",
+      "self": "https://company.atlassian.net/rest/api/3/issue/10107",
+      "key": "MR-13",
+      "fields": {
+        "issuetype": {
+          "self": "https://company.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "A user story. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://company.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315
+        },
+        "customfield_10070": null,
+        "customfield_10071": null,
+        "timespent": null,
+        "customfield_10072": [],
+        "customfield_10073": null,
+        "customfield_10030": null,
+        "customfield_10074": "2017-08-25T12:24:08.097+0800",
+        "project": {
+          "self": "https://company.atlassian.net/rest/api/3/project/10000",
+          "id": "10000",
+          "key": "MR",
+          "name": "MR Web",
+          "projectTypeKey": "software",
+          "avatarUrls": {
+            "48x48": "https://company.atlassian.net/secure/projectavatar?pid=10000&avatarId=10487",
+            "24x24": "https://company.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10487",
+            "16x16": "https://company.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10487",
+            "32x32": "https://company.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10487"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/MR-13/watchers",
+          "watchCount": 3,
+          "isWatching": true
+        },
+        "created": "2017-07-17T14:24:09.635+0800",
+        "customfield_10062": null,
+        "customfield_10063": null,
+        "customfield_10064": null,
+        "customfield_10066": null,
+        "customfield_10067": null,
+        "priority": {
+          "self": "https://company.atlassian.net/rest/api/3/priority/1",
+          "iconUrl": "https://company.atlassian.net/images/icons/priorities/highest.svg",
+          "name": "Highest",
+          "id": "1"
+        },
+        "customfield_10068": null,
+        "customfield_10069": null,
+        "labels": [],
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "12059",
+            "self": "https://company.atlassian.net/rest/api/3/issueLink/12059",
+            "type": {
+              "id": "10001",
+              "name": "Cloners",
+              "inward": "is cloned by",
+              "outward": "clones",
+              "self": "https://company.atlassian.net/rest/api/3/issueLinkType/10001"
+            },
+            "inwardIssue": {
+              "id": "16468",
+              "key": "TECH-13",
+              "self": "https://company.atlassian.net/rest/api/3/issue/16468",
+              "fields": {
+                "summary": "CLONE - As an Architect, I want to implement Web Sockets so that a reservation is captured and queried real-time",
+                "status": {
+                  "self": "https://company.atlassian.net/rest/api/3/status/10002",
+                  "description": "",
+                  "iconUrl": "https://company.atlassian.net/",
+                  "name": "Backlog",
+                  "id": "10002",
+                  "statusCategory": {
+                    "self": "https://company.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://company.atlassian.net/rest/api/3/priority/2",
+                  "iconUrl": "https://company.atlassian.net/images/icons/priorities/high.svg",
+                  "name": "High",
+                  "id": "2"
+                },
+                "issuetype": {
+                  "self": "https://company.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                  "iconUrl": "https://company.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315
+                }
+              }
+            }
+          }
+        ],
+        "assignee": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "updated": "2018-07-28T15:12:53.575+0800",
+        "status": {
+          "self": "https://company.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://company.atlassian.net/",
+          "name": "To Do",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://company.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Web Sockets (socket.io, PubNub etc) for live update status tracking"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10011": null,
+        "customfield_10058": null,
+        "customfield_10059": null,
+        "customfield_10006": "MR-14",
+        "security": null,
+        "customfield_10007": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "EPIC_LINK_SHOULD_BE_USED",
+            "message": "To set an epic as the parent, use the epic link instead"
+          }
+        },
+        "customfield_10008": null,
+        "customfield_10009": "2|hzynvz:",
+        "aggregatetimeestimate": null,
+        "summary": "As an Architect, I want to implement Web Sockets so that a reservation is captured and queried real-time",
+        "creator": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=557058%3A996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "name": "admin",
+          "key": "admin",
+          "accountId": "557058:996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "emailAddress": "jason@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "Jason Liew",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "subtasks": [],
+        "customfield_10041": null,
+        "customfield_10043": null,
+        "reporter": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=557058%3A996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "name": "admin",
+          "key": "admin",
+          "accountId": "557058:996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "emailAddress": "jason@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "Jason Liew",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/MR-13/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "16229",
+      "self": "https://company.atlassian.net/rest/api/3/issue/16229",
+      "key": "TECH-11",
+      "fields": {
+        "issuetype": {
+          "self": "https://company.atlassian.net/rest/api/3/issuetype/10002",
+          "id": "10002",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://company.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "customfield_10070": null,
+        "customfield_10071": null,
+        "timespent": null,
+        "customfield_10072": [],
+        "customfield_10073": null,
+        "customfield_10030": null,
+        "customfield_10074": null,
+        "project": {
+          "self": "https://company.atlassian.net/rest/api/3/project/10038",
+          "id": "10038",
+          "key": "TECH",
+          "name": "Tech Mgnt",
+          "projectTypeKey": "software",
+          "avatarUrls": {
+            "48x48": "https://company.atlassian.net/secure/projectavatar?pid=10038&avatarId=10518",
+            "24x24": "https://company.atlassian.net/secure/projectavatar?size=small&pid=10038&avatarId=10518",
+            "16x16": "https://company.atlassian.net/secure/projectavatar?size=xsmall&pid=10038&avatarId=10518",
+            "32x32": "https://company.atlassian.net/secure/projectavatar?size=medium&pid=10038&avatarId=10518"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "lastViewed": "2018-09-27T16:14:40.595+0800",
+        "watches": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/TECH-11/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "created": "2018-07-02T17:55:28.127+0800",
+        "customfield_10062": null,
+        "customfield_10063": null,
+        "customfield_10064": null,
+        "customfield_10066": null,
+        "customfield_10067": null,
+        "priority": {
+          "self": "https://company.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://company.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10068": null,
+        "customfield_10069": null,
+        "labels": [],
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "updated": "2018-07-19T16:56:31.506+0800",
+        "status": {
+          "self": "https://company.atlassian.net/rest/api/3/status/10010",
+          "description": "",
+          "iconUrl": "https://company.atlassian.net/",
+          "name": "Selected for Development",
+          "id": "10010",
+          "statusCategory": {
+            "self": "https://company.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10011": null,
+        "customfield_10058": null,
+        "customfield_10059": null,
+        "customfield_10006": null,
+        "customfield_10007": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "EPIC_LINK_SHOULD_BE_USED",
+            "message": "To set an epic as the parent, use the epic link instead"
+          }
+        },
+        "security": null,
+        "customfield_10008": null,
+        "customfield_10009": "2|hzzk8n:",
+        "aggregatetimeestimate": null,
+        "summary": "Finance Collaboration Design with Michel and Karen",
+        "creator": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "subtasks": [],
+        "customfield_10041": null,
+        "customfield_10043": null,
+        "reporter": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10000": "{}",
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/TECH-11/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "16468",
+      "self": "https://company.atlassian.net/rest/api/3/issue/16468",
+      "key": "TECH-13",
+      "fields": {
+        "issuetype": {
+          "self": "https://company.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "A user story. Created by JIRA Software - do not edit or delete.",
+          "iconUrl": "https://company.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315
+        },
+        "customfield_10070": null,
+        "customfield_10071": null,
+        "timespent": null,
+        "customfield_10072": [],
+        "customfield_10073": null,
+        "customfield_10074": null,
+        "customfield_10030": null,
+        "project": {
+          "self": "https://company.atlassian.net/rest/api/3/project/10038",
+          "id": "10038",
+          "key": "TECH",
+          "name": "Tech Mgnt",
+          "projectTypeKey": "software",
+          "avatarUrls": {
+            "48x48": "https://company.atlassian.net/secure/projectavatar?pid=10038&avatarId=10518",
+            "24x24": "https://company.atlassian.net/secure/projectavatar?size=small&pid=10038&avatarId=10518",
+            "16x16": "https://company.atlassian.net/secure/projectavatar?size=xsmall&pid=10038&avatarId=10518",
+            "32x32": "https://company.atlassian.net/secure/projectavatar?size=medium&pid=10038&avatarId=10518"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "lastViewed": "2018-09-25T18:26:22.018+0800",
+        "watches": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/TECH-13/watchers",
+          "watchCount": 0,
+          "isWatching": false
+        },
+        "created": "2018-07-11T14:04:30.575+0800",
+        "customfield_10062": null,
+        "customfield_10063": null,
+        "customfield_10064": null,
+        "customfield_10066": null,
+        "priority": {
+          "self": "https://company.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://company.atlassian.net/images/icons/priorities/high.svg",
+          "name": "High",
+          "id": "2"
+        },
+        "customfield_10067": null,
+        "customfield_10068": null,
+        "customfield_10069": null,
+        "labels": [],
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "12059",
+            "self": "https://company.atlassian.net/rest/api/3/issueLink/12059",
+            "type": {
+              "id": "10001",
+              "name": "Cloners",
+              "inward": "is cloned by",
+              "outward": "clones",
+              "self": "https://company.atlassian.net/rest/api/3/issueLinkType/10001"
+            },
+            "outwardIssue": {
+              "id": "10107",
+              "key": "MR-13",
+              "self": "https://company.atlassian.net/rest/api/3/issue/10107",
+              "fields": {
+                "summary": "As an Architect, I want to implement Web Sockets so that a reservation is captured and queried real-time",
+                "status": {
+                  "self": "https://company.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://company.atlassian.net/",
+                  "name": "To Do",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://company.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://company.atlassian.net/rest/api/3/priority/1",
+                  "iconUrl": "https://company.atlassian.net/images/icons/priorities/highest.svg",
+                  "name": "Highest",
+                  "id": "1"
+                },
+                "issuetype": {
+                  "self": "https://company.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                  "iconUrl": "https://company.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315
+                }
+              }
+            }
+          }
+        ],
+        "assignee": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "updated": "2018-07-11T14:06:10.996+0800",
+        "status": {
+          "self": "https://company.atlassian.net/rest/api/3/status/10002",
+          "description": "",
+          "iconUrl": "https://company.atlassian.net/",
+          "name": "Backlog",
+          "id": "10002",
+          "statusCategory": {
+            "self": "https://company.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Web Sockets (socket.io, PubNub etc) for live update status tracking"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10011": null,
+        "customfield_10058": null,
+        "customfield_10059": null,
+        "customfield_10006": "MR-14",
+        "customfield_10007": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "EPIC_LINK_SHOULD_BE_USED",
+            "message": "To set an epic as the parent, use the epic link instead"
+          }
+        },
+        "security": null,
+        "customfield_10008": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@5d963a8a[id=396,rapidViewId=1,state=CLOSED,name=MR Sprint 10A18,goal=,startDate=2018-10-08T08:28:30.479Z,endDate=2018-10-16T00:45:00.000Z,completeDate=2018-10-17T02:15:02.832Z,sequence=419]"
+        ],
+        "customfield_10009": "2|hzzlhr:",
+        "aggregatetimeestimate": null,
+        "summary": "CLONE - As an Architect, I want to implement Web Sockets so that a reservation is captured and queried real-time",
+        "creator": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=5b1795fc64666649ccb91592",
+          "name": "jack.wang",
+          "key": "jack.wang",
+          "accountId": "5b1795fc64666649ccb91592",
+          "emailAddress": "jack.wang@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/a196b14f7380e77806360e69149e2c6f?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fa196b14f7380e77806360e69149e2c6f%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "jack.wang",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "subtasks": [],
+        "customfield_10041": null,
+        "reporter": {
+          "self": "https://company.atlassian.net/rest/api/3/user?accountId=557058%3A996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "name": "admin",
+          "key": "admin",
+          "accountId": "557058:996cf6fc-afc2-408d-8569-11b2a0519d22",
+          "emailAddress": "jason@chope.co",
+          "avatarUrls": {
+            "48x48": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+            "24x24": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+            "16x16": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+            "32x32": "https://avatar-cdn.atlassian.com/72cfdd3718836a0441af8875bf041996?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F72cfdd3718836a0441af8875bf041996%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+          },
+          "displayName": "Jason Liew",
+          "active": true,
+          "timeZone": "Asia/Shanghai"
+        },
+        "customfield_10043": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10000": "{}",
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://company.atlassian.net/rest/api/3/issue/TECH-13/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    }
+  ]
+}
