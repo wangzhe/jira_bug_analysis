@@ -1,6 +1,6 @@
 # Bug Analysis Application (BAA)
-[![star this repo](http://githubbadges.com/star.svg?user=wangzhe&repo=wxJBot&style=default)](https://github.com/wangzhe/wxJBot)
-[![fork this repo](http://githubbadges.com/fork.svg?user=wangzhe&repo=wxJBot&style=default)](https://github.com/wangzhe/wxJBot/fork)
+[![star this repo](http://githubbadges.com/star.svg?user=wangzhe&repo=jira_bug_analysis&style=default)](https://github.com/wangzhe/jira_bug_analysis)
+[![fork this repo](http://githubbadges.com/fork.svg?user=wangzhe&repo=jira_bug_analysis&style=default)](https://github.com/wangzhe/jira_bug_analysis/fork)
 ![python](https://img.shields.io/badge/python-3.6-ff69b4.svg)
 
 ## What is BAA
