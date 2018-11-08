@@ -1,13 +1,13 @@
-# Bug Analysis Application (BAA)
+# Jira Bug Analyzer (JBA)
 [![star this repo](http://githubbadges.com/star.svg?user=wangzhe&repo=jira_bug_analysis&style=default)](https://github.com/wangzhe/jira_bug_analysis)
 [![fork this repo](http://githubbadges.com/fork.svg?user=wangzhe&repo=jira_bug_analysis&style=default)](https://github.com/wangzhe/jira_bug_analysis/fork)
 ![python](https://img.shields.io/badge/python-3.6-ff69b4.svg)
 
-## What is BAA
+## What is JBA
 
-BAA (Bug Analysis Application) is an application of bug analysis against Jira
+JBA (Jira Bug Analyzer) is an application of bug analysis against Jira
 
-## How to start BAA
+## How to start JBA
 
 1) Step One
    +    if you are using docker, please use dockfile to setup everything

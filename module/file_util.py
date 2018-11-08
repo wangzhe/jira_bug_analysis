@@ -65,3 +65,12 @@ def read_json_from_file(data_filename):
     with open(data_filename) as input_file:
         json_data = json.load(input_file)
     return json_data
+
+
+def read_html_from_file(data_filename):
+    data_filename = get_database_full_path(data_filename)
+
+    with open(data_filename) as input_file:
+        html_text = input_file.read()
+        input_file.close()
+    return html_text

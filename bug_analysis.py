@@ -1,8 +1,8 @@
 import datetime
 
 from module.analysis_util import the_closest_sprint_start_date, get_the_last_sprint_bugs, debug_log_console
-from module.email_util import compose_email_body, send_email
 from module.file_util import file_backup, write_json_obj_to_file, read_json_from_file
+from module.jba_email import JbaEmail
 from module.jira_bug import JiraBugList
 from module.jira_method import is_system_available, system_init, get_fields_in_dict
 from module.pyplot_util import generate_bar_chart
@@ -96,9 +96,10 @@ def do_analysis():
 
     # No.2 graphic - bug priority
     priority_barchart_filename = generate_bug_priority_barchart(bug_list)
-    debug_log_console(summary_barchart_filename)
+    debug_log_console(priority_barchart_filename)
 
     # final step - compose and send email
     graphs_full_path = [graphic_path + summary_barchart_filename]
-    email_body = compose_email_body(graphs_full_path)
-    send_email(email_body)
+    jba_email = JbaEmail().instance
+    email_body = jba_email.compose_email_body(graphs_full_path)
+    jba_email.send_email(email_body.as_string())

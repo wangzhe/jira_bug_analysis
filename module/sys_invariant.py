@@ -9,12 +9,9 @@ online_bug_summary_png = "online_bug_summary.png"
 graphic_path = "graphics/"
 database_path = "database/"
 config_path = "config/"
-
-sender = 'aaa@.ddd.com'
-receiver = 'bbb@.eee.com'
-subject = 'python email with pictures'
-smtpserver = 'smtp.sina.com.cn'
 img_list = 'graphics'
+
+receivers = ['jack.wang@chope.co', '40646734@qq.com']
 
 
 def get_sprint_bug_summary_filename():
