@@ -1,4 +1,5 @@
 import datetime
+import inspect
 from urllib.parse import urlencode
 
 from module.file_util import write_json_to_file
@@ -39,8 +40,11 @@ def compose_search_jql_uri(next_sprint_start_date, start_at=0):
 
 
 def debug_log_console(text, debug_mode=False):
+    if isinstance(text, list):
+        text = " ".join(text)
     if JiraInfo().instance.is_debug() or debug_mode:
-        print(text)
+        print("file: " + inspect.stack()[1][1].split("/")[-1:][0] + " | method: " + inspect.stack()[1][3] +
+              " | data: " + text)
 
 
 def debug_log_json_file(response, filename='temp.json', debug_mode=False):

@@ -18,6 +18,6 @@ class TestJbaEmail(TestCase):
         html_text = read_html_from_file("test.eml")
         self.assertEqual(html_text[:10], email_body.as_string()[:10])
 
-    def test_send_email(self):
-        html_text = read_html_from_file("test.eml")
-        jba_email.send_email(html_text)
+    # def test_send_email(self):
+    #     html_text = read_html_from_file("test.eml")
+    #     jba_email.send_email(html_text)

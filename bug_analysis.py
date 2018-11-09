@@ -1,13 +1,12 @@
-import datetime
-
 from module.analysis_util import the_closest_sprint_start_date, get_the_last_sprint_bugs, debug_log_console
-from module.file_util import file_backup, write_json_obj_to_file, read_json_from_file
-from module.jba_email import JbaEmail
+from module.file_util import *
+from module.jba_email import send_email_from_graphics
 from module.jira_bug import JiraBugList
 from module.jira_method import is_system_available, system_init, get_fields_in_dict
-from module.pyplot_util import generate_bar_chart
+from module.pyplot_util import *
+from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module.sys_invariant import date_format, show_last_n_bars, get_online_bug_summary_png_filename, \
-    get_sprint_bug_summary_filename, graphic_path
+    get_sprint_bug_summary_filename, graphic_path, online_bug_priority_png, online_bug_classification_png
 
 
 def store_count_into_file(sprint_bug_summary_filename, last_sprint_bugs_count, sprint_start_date):
@@ -78,8 +77,38 @@ def get_bug_list(basic_base64_token):
     return bug_list
 
 
-def generate_bug_priority_barchart(bug_list):
-    return None
+def generate_bug_priority_barhchart(bug_list):
+    priority_data, priority_label = bug_data_and_label_classified_in_catalog(bug_list,
+                                                                             ["Low", "Medium", "High", "Highest"],
+                                                                             'priority')
+    debug_log_console(str(priority_data))
+    debug_log_console(str(priority_label))
+    generate_barh_chart(priority_label, priority_data, online_bug_priority_png)
+    return online_bug_priority_png
+
+
+def generate_bug_classification_piechart(bug_list):
+    classify_data, classify_label = bug_data_and_label_classified_in_catalog(bug_list,
+                                                                             ["Fore-End", "Product Logic", "Server",
+                                                                              "Third Part", "Wrong Reported"],
+                                                                             'bug classify')
+    debug_log_console(str(classify_data))
+    debug_log_console(str(classify_label))
+    generate_pie_chart(classify_label, classify_data, online_bug_classification_png)
+    return online_bug_classification_png
+
+
+def generate_bug_unclassified_piechart(bug_list):
+    classify_data, classify_label = bug_data_and_label_classified_in_catalog(bug_list,
+                                                                             ["Fore-End", "Product Logic", "Server",
+                                                                              "Third Part", "Wrong Reported"],
+                                                                             'bug classify')
+    unclassified_date = [len(bug_list.bugs), sum(classify_data)]
+    unclassified_label = ["Clarified", "Non-Clarified"]
+    print(classify_data)
+    debug_log_console(str(unclassified_date))
+    debug_log_console(str(unclassified_label))
+    generate_pie_chart(unclassified_date, unclassified_label, online_bug_classification_png)
 
 
 def do_analysis():
@@ -95,11 +124,19 @@ def do_analysis():
     debug_log_console(summary_barchart_filename)
 
     # No.2 graphic - bug priority
-    priority_barchart_filename = generate_bug_priority_barchart(bug_list)
+    priority_barchart_filename = generate_bug_priority_barhchart(bug_list)
+    debug_log_console(priority_barchart_filename)
+
+    # No.3 graphic - bug classification
+    priority_classification_filename = generate_bug_classification_piechart(bug_list)
+    debug_log_console(priority_barchart_filename)
+
+    # No.4 graphic - bug unclassified
+    priority_classification_filename = generate_bug_unclassified_piechart(bug_list)
     debug_log_console(priority_barchart_filename)
 
     # final step - compose and send email
-    graphs_full_path = [graphic_path + summary_barchart_filename]
-    jba_email = JbaEmail().instance
-    email_body = jba_email.compose_email_body(graphs_full_path)
-    jba_email.send_email(email_body.as_string())
+    graphs_full_path = [graphic_path + summary_barchart_filename,
+                        graphic_path + priority_barchart_filename,
+                        graphic_path + priority_classification_filename]
+    send_email_from_graphics(graphs_full_path)

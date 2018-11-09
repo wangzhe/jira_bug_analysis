@@ -4,7 +4,9 @@ from unittest import TestCase
 from unittest.mock import Mock
 
 from bug_analysis import store_count_into_file, generate_online_bug_summary_chart, generate_bug_summary_barchart, \
-    append_latest_sprint_info
+    append_latest_sprint_info, generate_bug_priority_barhchart, \
+    generate_bug_classification_piechart, generate_bug_unclassified_piechart
+from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module import jira_bug
 from module.file_util import read_json_from_file, file_recover
 from module.jira_bug import JiraBugList
@@ -72,3 +74,19 @@ class TestAnalysis(TestCase):
                                                                         sprint_start_date)
         self.assertEqual(0, sprint_online_bug_summary_json_data[len(sprint_online_bug_summary_json_data) - 1][
             "sprint bug count"])
+
+    def test_bug_data_and_label_classified_in_catalog(self):
+        priority_data, priority_label = bug_data_and_label_classified_in_catalog(bugList,
+                                                                                 ["Low", "Medium", "High", "Highest"],
+                                                                                 'priority')
+        self.assertEqual(1, priority_data[0])
+        self.assertEqual(48, priority_data[1])
+
+    def test_generate_bug_priority_barhchart(self):
+        generate_bug_priority_barhchart(bugList)
+
+    def test_generate_bug_classification_piechart(self):
+        generate_bug_classification_piechart(bugList)
+
+    def test_generate_bug_unclassified_piechart(self):
+        generate_bug_unclassified_piechart(bugList)

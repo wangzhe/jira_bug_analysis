@@ -6,6 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from module.analysis_util import debug_log_console
+from module.file_util import write_html_to_file
 from module.sys_invariant import config_path, receivers
 
 
@@ -91,3 +92,10 @@ class JbaEmail:
             JbaEmail.instance = JbaEmail.__JbaEmail(getpass.getuser())
         else:
             JbaEmail.instance
+
+
+def send_email_from_graphics(graphs_full_path):
+    jba_email = JbaEmail().instance
+    email_body = jba_email.compose_email_body(graphs_full_path)
+    write_html_to_file("test.eml", email_body.as_string())
+    # jba_email.send_email(email_body.as_string())
