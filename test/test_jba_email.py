@@ -15,9 +15,12 @@ class TestJbaEmail(TestCase):
         graphs_full_path = [graphic_path + "test_" + online_bug_summary_png]
         print(graphs_full_path)
         email_body = jba_email.compose_email_body(graphs_full_path)
+        write_html_to_file("test2.eml", email_body.as_string())
         html_text = read_html_from_file("test.eml")
         self.assertEqual(html_text[:10], email_body.as_string()[:10])
 
     # def test_send_email(self):
     #     html_text = read_html_from_file("test.eml")
+    #     print(jba_email.receivers[1])
     #     jba_email.send_email(html_text)
+

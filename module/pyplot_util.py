@@ -33,18 +33,19 @@ def generate_barh_chart(label, data, filename=None):
     # plt.show()
 
 
-def generate_pie_chart(label, data, filename=None):
+def generate_pie_chart(label, data, filename=None, title='No-Title'):
     plt.clf()
-    plt.title('Classification')
+    plt.title(title)
 
-    patches, texts, autotexts = plt.pie(data, labels=label, autopct='%1.1f%%')
+    label_with_num = [str(label[i]) + "(" + str(data[i]) + ")" for i in range(len(label))]
+    patches, texts, autotexts = plt.pie(data, labels=label_with_num, autopct='%1.1f%%')
     [_.set_fontsize(8) for _ in texts]
     [_.set_fontsize(8) for _ in autotexts]
 
     plt.axis('equal')
     if filename is not None:
         plt.savefig(graphic_path + filename)
-    # plt.show()
+    plt.show()
 
 
 def bug_data_and_label_classified_in_catalog(bug_list, bug_label, bug_catalog):

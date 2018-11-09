@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 from module.analysis_util import debug_log_console
 from module.file_util import write_html_to_file
-from module.sys_invariant import config_path, receivers
+from module.sys_invariant import config_path
 
 
 class JbaEmail:
@@ -22,6 +22,8 @@ class JbaEmail:
             self.smtp_pass = config['EMAIL']['SMTP_PASS']
             self.charset = config['EMAIL']['CHARSET']
             self.from_addr = config['EMAIL']['FROM_ADDR']
+            self.to_addrs = config['EMAIL']['TO_ADDR']
+            self.receivers = self.to_addrs.split(",")
             self.debug_mode = config['ACCOUNT'].getboolean('DEBUG_MODE')
 
         def is_debug(self):
@@ -30,7 +32,7 @@ class JbaEmail:
         def compose_email_body(self, graphics):
             msg_content = MIMEMultipart('related')
             msg_content['From'] = "{}".format(self.from_addr)
-            msg_content['To'] = ",".join(receivers)
+            msg_content['To'] = ",".join(self.receivers)
             msg_content['Subject'] = '[Tech Index] online bug report'
 
             msg_template = self.generate_msg_template_according_to_graphics(graphics)
@@ -48,8 +50,10 @@ class JbaEmail:
                 )
                 smtp.connect(host=self.smtp_host, port=self.smtp_port)
                 smtp.login(self.smtp_user, self.smtp_pass)
-                smtp.sendmail(self.from_addr, receivers, msg_content)
+                smtp.sendmail(self.from_addr, self.receivers, msg_content)
                 smtp.close()
+                debug_log_console(str(self.from_addr))
+                debug_log_console(str(self.receivers))
                 debug_log_console('mail send finished.')
 
             except (Exception,) as e:
@@ -77,12 +81,11 @@ class JbaEmail:
         def generate_msg_template_according_to_graphics(graphics):
             content = '<p>Hello guys,</p><br/> ' \
                       'This is one of the tech team index: <b>online bug summary</b>. ' \
-                      + str(len(graphics)) + ' analysis graphics as followed<br/><p>'
+                      + str(len(graphics)) + ' analysis graphics as followed<br/><p>' \
+                                             '<table border="1">'
             for index in range(len(graphics)):
-                if index % 2 == 0:
-                    content += '<img src="cid:' + str(index) + '"><br>'
-                else:
-                    content += '<img src="cid:' + str(index) + '">'
+                    content += '<tr><td><img src="cid:' + str(index) + '"><br><p></td></tr>'
+            content += "</table>"
             return MIMEText(content, 'html', 'utf-8')
 
     instance = None
@@ -98,4 +101,4 @@ def send_email_from_graphics(graphs_full_path):
     jba_email = JbaEmail().instance
     email_body = jba_email.compose_email_body(graphs_full_path)
     write_html_to_file("test.eml", email_body.as_string())
-    # jba_email.send_email(email_body.as_string())
+    jba_email.send_email(email_body.as_string())

@@ -8,14 +8,13 @@ sprint_bug_summary_filename = "sprint_bug_summary.json"
 online_bug_summary_png = "online_bug_summary.png"
 online_bug_priority_png = "online_bug_priority.png"
 online_bug_classification_png = "online_bug_classification.png"
+online_bug_unclassified_png = "online_bug_unclassified.png"
 
 
 graphic_path = "graphics/"
 database_path = "database/"
 config_path = "config/"
 img_list = 'graphics'
-
-receivers = ['jack.wang@chope.co', '40646734@qq.com']
 
 
 def get_sprint_bug_summary_filename():
