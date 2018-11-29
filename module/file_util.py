@@ -1,7 +1,9 @@
+import csv
 import datetime
 import json
 import os
 from shutil import copyfile
+
 from module.sys_invariant import database_path as db
 
 
@@ -74,3 +76,19 @@ def read_html_from_file(data_filename):
         html_text = input_file.read()
         input_file.close()
     return html_text
+
+
+def convert_dict_into_list(row_data):
+    return row_data.values()
+
+
+def write_to_csv(header, data, data_filename='source.csv'):
+    data_filename = get_database_full_path(data_filename)
+
+    with open(data_filename, mode='w') as source_file:
+        csv_writer = csv.writer(source_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+        csv_writer.writerow(header)
+        for row_data in data:
+            row_list = convert_dict_into_list(row_data)
+            csv_writer.writerow(row_list)

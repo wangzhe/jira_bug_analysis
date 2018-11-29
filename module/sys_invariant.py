@@ -3,13 +3,15 @@ date_format = {
     "in_file": "%Y/%m/%d"
 }
 
+need_show_plot = False
+
 show_last_n_bars = -6
 sprint_bug_summary_filename = "sprint_bug_summary.json"
 online_bug_summary_png = "online_bug_summary.png"
 online_bug_priority_png = "online_bug_priority.png"
 online_bug_classification_png = "online_bug_classification.png"
 online_bug_unclassified_png = "online_bug_unclassified.png"
-
+online_bug_source_in_csv = 'source.csv'
 
 graphic_path = "graphics/"
 database_path = "database/"

@@ -7,7 +7,7 @@ from module.pyplot_util import *
 from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module.sys_invariant import date_format, show_last_n_bars, get_online_bug_summary_png_filename, \
     get_sprint_bug_summary_filename, graphic_path, online_bug_priority_png, online_bug_classification_png, \
-    online_bug_unclassified_png
+    online_bug_unclassified_png, online_bug_source_in_csv, database_path
 
 
 def store_count_into_file(sprint_bug_summary_filename, last_sprint_bugs_count, sprint_start_date):
@@ -112,7 +112,15 @@ def generate_bug_unclassified_piechart(bug_list):
     return online_bug_unclassified_png
 
 
-def do_analysis():
+def write_bug_list_to_csv(bug_list):
+    if bug_list.bugs[0] is None:
+        return
+    column_header = bug_list.bugs[0].keys()
+    write_to_csv(column_header, bug_list.bugs, online_bug_source_in_csv)
+    return online_bug_source_in_csv
+
+
+def do_bug_analysis():
     basic_base64_token = system_init()
     if not is_system_available(basic_base64_token):
         print("system check failed, please ask admin")
@@ -136,9 +144,13 @@ def do_analysis():
     unclassified_piechart_filename = generate_bug_unclassified_piechart(bug_list)
     debug_log_console(priority_barchart_filename)
 
+    online_bug_source_filename = write_bug_list_to_csv(bug_list)
+    debug_log_console(online_bug_source_filename)
+
     # final step - compose and send email
     graphs_full_path = [graphic_path + summary_barchart_filename,
                         graphic_path + priority_barchart_filename,
                         graphic_path + classification_piechart_filename,
                         graphic_path + unclassified_piechart_filename]
-    send_email_from_graphics(graphs_full_path)
+    file_full_path = database_path + online_bug_source_filename
+    send_email_from_graphics(graphs_full_path, file_full_path)

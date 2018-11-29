@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from module.sys_invariant import graphic_path
+from module.sys_invariant import graphic_path, need_show_plot
 
 
 def generate_bar_chart(label, data, filename=None):
@@ -15,7 +15,8 @@ def generate_bar_chart(label, data, filename=None):
     plt.bar(label, data, width=0.5)
     if filename is not None:
         plt.savefig(graphic_path + filename)
-    # plt.show()
+    if need_show_plot:
+        plt.show()
 
 
 def generate_barh_chart(label, data, filename=None):
@@ -30,7 +31,8 @@ def generate_barh_chart(label, data, filename=None):
     plt.barh(label, data, height=0.5)
     if filename is not None:
         plt.savefig(graphic_path + filename)
-    # plt.show()
+    if need_show_plot:
+        plt.show()
 
 
 def generate_pie_chart(label, data, filename=None, title='No-Title'):
@@ -45,7 +47,8 @@ def generate_pie_chart(label, data, filename=None, title='No-Title'):
     plt.axis('equal')
     if filename is not None:
         plt.savefig(graphic_path + filename)
-    plt.show()
+    if need_show_plot:
+        plt.show()
 
 
 def bug_data_and_label_classified_in_catalog(bug_list, bug_label, bug_catalog):

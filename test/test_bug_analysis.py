@@ -5,12 +5,12 @@ from unittest.mock import Mock
 
 from bug_analysis import store_count_into_file, generate_online_bug_summary_chart, generate_bug_summary_barchart, \
     append_latest_sprint_info, generate_bug_priority_barhchart, \
-    generate_bug_classification_piechart, generate_bug_unclassified_piechart
+    generate_bug_classification_piechart, generate_bug_unclassified_piechart, write_bug_list_to_csv
 from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module import jira_bug
 from module.file_util import read_json_from_file, file_recover
 from module.jira_bug import JiraBugList
-from module.sys_invariant import date_format
+from module.sys_invariant import date_format, online_bug_source_in_csv
 
 
 class TestAnalysis(TestCase):
@@ -90,3 +90,6 @@ class TestAnalysis(TestCase):
 
     def test_generate_bug_unclassified_piechart(self):
         generate_bug_unclassified_piechart(bugList)
+
+    def test_write_bug_list_to_csv(self):
+        self.assertEqual(online_bug_source_in_csv, write_bug_list_to_csv(bugList))

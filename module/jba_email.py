@@ -1,6 +1,7 @@
 import configparser
 import getpass
 import smtplib
+from email.mime.application import MIMEApplication
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -29,14 +30,16 @@ class JbaEmail:
         def is_debug(self):
             return self.debug_mode
 
-        def compose_email_body(self, graphics):
+        def compose_email_body(self, graphics, attach_file_full_path):
             msg_content = MIMEMultipart('related')
             msg_content['From'] = "{}".format(self.from_addr)
             msg_content['To'] = ",".join(self.receivers)
             msg_content['Subject'] = '[Tech Index] online bug report'
 
             msg_template = self.generate_msg_template_according_to_graphics(graphics)
+
             msg_content = self.fill_content_into_template(graphics, msg_content, msg_template)
+            msg_content = self.attach_file_into_content(attach_file_full_path, msg_content)
             return msg_content
 
         def send_email(self, msg_content):
@@ -65,6 +68,19 @@ class JbaEmail:
                     smtp.close()
 
         @staticmethod
+        def attach_file_into_content(attach_file_full_path, msg_content):
+            msg_content.attach(MIMEText("source.csv"))
+            with open(attach_file_full_path, "rb") as attach_file:
+                part = MIMEApplication(
+                    attach_file.read(),
+                    Name="source.csv"
+                )
+            # After the file is closed
+            part['Content-Disposition'] = 'attachment; filename="%s"' % "source.csv"
+            msg_content.attach(part)
+            return msg_content
+
+        @staticmethod
         def fill_content_into_template(graphics, msg_content, msg_template):
             msg_content.attach(msg_template)
             index = 0
@@ -84,7 +100,7 @@ class JbaEmail:
                       + str(len(graphics)) + ' analysis graphics as followed<br/><p>' \
                                              '<table border="1">'
             for index in range(len(graphics)):
-                    content += '<tr><td><img src="cid:' + str(index) + '"><br><p></td></tr>'
+                content += '<tr><td><img src="cid:' + str(index) + '"><br><p></td></tr>'
             content += "</table>"
             return MIMEText(content, 'html', 'utf-8')
 
@@ -97,8 +113,8 @@ class JbaEmail:
             JbaEmail.instance
 
 
-def send_email_from_graphics(graphs_full_path):
+def send_email_from_graphics(graphs_full_path, attach_file_full_path):
     jba_email = JbaEmail().instance
-    email_body = jba_email.compose_email_body(graphs_full_path)
+    email_body = jba_email.compose_email_body(graphs_full_path, attach_file_full_path)
     write_html_to_file("test.eml", email_body.as_string())
     jba_email.send_email(email_body.as_string())

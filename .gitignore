@@ -108,3 +108,4 @@ graphics/*.png
 test/graphics/*.png
 **/*.eml
 **/sprint_bug_summary_*.json
+**/*.csv
