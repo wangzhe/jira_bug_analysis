@@ -1,3 +1,5 @@
+import getpass
+
 date_format = {
     "default": "%m/%d/%y",
     "in_file": "%Y/%m/%d"
@@ -25,3 +27,7 @@ def get_sprint_bug_summary_filename():
 
 def get_online_bug_summary_png_filename():
     return online_bug_summary_png
+
+
+def get_system_user():
+    return getpass.getuser()
