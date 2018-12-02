@@ -15,8 +15,12 @@ class JbaEmail:
     class __JbaEmail:
         def __init__(self, arg):
             config = configparser.ConfigParser()
-            config.read(config_path + arg + '.local')
-            self.smtp_host = config['EMAIL']['SMTP_HOST']
+            try:
+                config.read(config_path + arg + '.local')
+                self.smtp_host = config['EMAIL']['SMTP_HOST']
+            except KeyError as e:
+                config.read(config_path + 'default.local')
+                self.smtp_host = config['EMAIL']['SMTP_HOST']
             self.smtp_port = config['EMAIL']['SMTP_PORT']
             self.smtp_timeout = config['EMAIL']['SMTP_TIMEOUT']
             self.smtp_user = config['EMAIL']['SMTP_USER']

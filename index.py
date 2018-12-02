@@ -1,3 +1,4 @@
+import configparser
 import logging
 
 
@@ -6,7 +7,7 @@ import logging
 # attach NAS for reading account info (default.local file)
 # NAS file write execution
 # third party code (request)
-from module.sys_invariant import get_system_user
+from module.sys_invariant import get_system_user, config_path
 
 
 def handler(event, context):
@@ -14,8 +15,13 @@ def handler(event, context):
     logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
     logger = logging.getLogger()
     logger.info('update handler file to show handler execution - Done')
-    getuser = get_system_user()
-    logger.info('add default local file： ' + getuser)
-    return 'hello world'
+    logger.info('add default local file： ' + get_system_user() + " - Done")
+    logger.info("reading account info (default.local file)")
 
-# handler(None, None)
+    config = configparser.ConfigParser()
+    config.read(config_path + 'default.local')
+    smtp_host = config['EMAIL']['SMTP_HOST']
+    return smtp_host
+
+
+print(handler(None, None))

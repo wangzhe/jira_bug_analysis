@@ -8,15 +8,15 @@ class JiraInfo:
     class __JiraInfo:
         def __init__(self, arg):
             config = configparser.ConfigParser()
-            config.read(config_path + arg + '.local')
-            self.host = config['ACCOUNT']['INSTANCE_HOST']
+            try:
+                config.read(config_path + arg + '.local')
+                self.host = config['ACCOUNT']['INSTANCE_HOST']
+            except KeyError as e:
+                config.read(config_path + 'default.local')
+                self.host = config['ACCOUNT']['INSTANCE_HOST']
             self.user = config['ACCOUNT']['A_USER']
             self.token = config['ACCOUNT']['A_TOKEN']
             self.debug_mode = config['ACCOUNT'].getboolean('DEBUG_MODE')
-
-        #
-        # def __str__(self):
-        #     return repr(self) + self.val
 
         def is_debug(self):
             return self.debug_mode
