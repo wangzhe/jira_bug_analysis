@@ -2,7 +2,6 @@ import datetime
 import inspect
 from urllib.parse import urlencode
 
-from module.file_util import write_json_to_file
 from module.jira_system import JiraInfo
 
 
@@ -45,8 +44,3 @@ def debug_log_console(text, debug_mode=False):
     if JiraInfo().instance.is_debug() or debug_mode:
         print("file: " + inspect.stack()[1][1].split("/")[-1:][0] + " | method: " + inspect.stack()[1][3] +
               " | data: " + text)
-
-
-def debug_log_json_file(response, filename='temp.json', debug_mode=False):
-    if JiraInfo().instance.is_debug() or debug_mode:
-        write_json_to_file(filename, response)

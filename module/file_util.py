@@ -11,6 +11,10 @@ def get_database_full_path(filename):
     return db + filename
 
 
+def convert_dict_into_list(row_data):
+    return row_data.values()
+
+
 def is_filename_existed(sprint_bug_summary_filename):
     has_source_file = has_backup_file = False
     for file in os.listdir("./"):
@@ -39,21 +43,6 @@ def file_recover(sprint_bug_summary_filename):
         "%m_%d_%y") + ".json", sprint_bug_summary_filename)
 
 
-def write_json_to_file(data_filename, json_text):
-    data_filename = get_database_full_path(data_filename)
-
-    with open(data_filename, 'w') as outfile:
-        json.dump(json.loads(json_text), outfile)
-
-
-def write_html_to_file(data_filename, html_text):
-    data_filename = get_database_full_path(data_filename)
-
-    with open(data_filename, 'w') as outfile:
-        outfile.write(html_text)
-        outfile.close()
-
-
 def write_json_obj_to_file(data_filename, jsonobj):
     data_filename = get_database_full_path(data_filename)
 
@@ -69,17 +58,19 @@ def read_json_from_file(data_filename):
     return json_data
 
 
+def write_html_to_file(data_filename, html_text):
+    data_filename = get_database_full_path(data_filename)
+
+    with open(data_filename, 'w') as outfile:
+        outfile.write(html_text)
+
+
 def read_html_from_file(data_filename):
     data_filename = get_database_full_path(data_filename)
 
     with open(data_filename) as input_file:
         html_text = input_file.read()
-        input_file.close()
     return html_text
-
-
-def convert_dict_into_list(row_data):
-    return row_data.values()
 
 
 def write_to_csv(header, data, data_filename='source.csv'):

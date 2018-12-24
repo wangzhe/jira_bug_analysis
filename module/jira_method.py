@@ -3,7 +3,7 @@ import json
 
 import requests
 
-from module.analysis_util import debug_log_console, debug_log_json_file
+from module.analysis_util import debug_log_console
 from module.jira_system import JiraInfo
 
 
