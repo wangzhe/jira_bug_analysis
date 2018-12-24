@@ -34,17 +34,16 @@ class OSSInfo:
         return getattr(self.instance, name)
 
 
-# test oss by id
+# test oss by id - done
 # test read and write file
 # test the real file read and write
 # run from all_test.py to local file;
 # run from main.py to local file;
 # run from index to oss
-def get_file():
+def check_oss():
     oss_info = OSSInfo()
-    # creds = context.credentials  # 获取系统生成的临时AK
     auth = oss2.Auth(oss_info.keyid, oss_info.secret)
     bucket = oss2.Bucket(auth, oss_info.endpoint, oss_info.bucket)
     object_name = 'sprint_bug_summary.json'
-    r = bucket.get_object(object_name).read()
-    return
+    object_str = bucket.get_object(object_name).read()
+    return object_str.decode('utf-8')
