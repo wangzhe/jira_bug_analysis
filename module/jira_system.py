@@ -10,13 +10,13 @@ class JiraInfo:
             config = configparser.ConfigParser()
             try:
                 config.read(config_path + arg + '.local')
-                self.host = config['ACCOUNT']['INSTANCE_HOST']
+                self.host = config['JIRA']['INSTANCE_HOST']
             except KeyError as e:
                 config.read(config_path + 'default.local')
-                self.host = config['ACCOUNT']['INSTANCE_HOST']
-            self.user = config['ACCOUNT']['A_USER']
-            self.token = config['ACCOUNT']['A_TOKEN']
-            self.debug_mode = config['ACCOUNT'].getboolean('DEBUG_MODE')
+                self.host = config['JIRA']['INSTANCE_HOST']
+            self.user = config['JIRA']['A_USER']
+            self.token = config['JIRA']['A_TOKEN']
+            self.debug_mode = config['JIRA'].getboolean('DEBUG_MODE')
 
         def is_debug(self):
             return self.debug_mode

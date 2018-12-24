@@ -29,7 +29,7 @@ class JbaEmail:
             self.from_addr = config['EMAIL']['FROM_ADDR']
             self.to_addrs = config['EMAIL']['TO_ADDR']
             self.receivers = self.to_addrs.split(",")
-            self.debug_mode = config['ACCOUNT'].getboolean('DEBUG_MODE')
+            self.debug_mode = config['EMAIL'].getboolean('DEBUG_MODE')
 
         def is_debug(self):
             return self.debug_mode
