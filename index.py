@@ -16,8 +16,14 @@ def handler(event, context):
     logger = logging.getLogger()
     logger.info('update handler file to show handler execution - Done')
     logger.info('add default local file： ' + get_system_user() + " - Done")
-    logger.info("reading account info (default.local file)")
+    smtp_host = account_config_test()
+    logger.info("reading account info (default.local file) - Done")
+    logger.info("NAS file write execution")
 
+    return smtp_host
+
+
+def account_config_test():
     config = configparser.ConfigParser()
     config.read(config_path + 'default.local')
     smtp_host = config['EMAIL']['SMTP_HOST']
