@@ -12,6 +12,7 @@ def get_last_sprint_duration(date):
 def the_closest_sprint_start_date(input_date, init_sprint_start_date_str="08/22/18"):
     calculated_date = sprint_start_date = datetime.datetime.strptime(init_sprint_start_date_str, "%m/%d/%y")
     sprint_count = 0
+    start_date = 0
     while calculated_date < input_date:
         sprint_count = sprint_count + 14
         start_date = calculated_date

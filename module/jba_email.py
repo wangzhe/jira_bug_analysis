@@ -49,6 +49,7 @@ class JbaEmail:
         def send_email(self, msg_content):
             print(self.from_addr)
             print(self.smtp_pass)
+            smtp = None
             try:
                 smtp = smtplib.SMTP_SSL(
                     host=self.smtp_host,
@@ -113,8 +114,6 @@ class JbaEmail:
     def __init__(self):
         if not JbaEmail.instance:
             JbaEmail.instance = JbaEmail.__JbaEmail(getpass.getuser())
-        else:
-            JbaEmail.instance
 
 
 def send_email_from_graphics(graphs_full_path, attach_file_full_path):
