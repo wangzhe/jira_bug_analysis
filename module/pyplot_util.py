@@ -1,6 +1,20 @@
+import io
+
 import matplotlib.pyplot as plt
 
-from module.sys_invariant import graphic_path, need_show_plot
+from module.storage_util import save_image
+from module.sys_invariant import need_show_plot
+
+
+def save_to_storage(filename):
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    save_image(filename, buf)
+    buf.close()
+
+    if need_show_plot:
+        plt.show()
 
 
 def generate_bar_chart(label, data, filename=None):
@@ -13,10 +27,7 @@ def generate_bar_chart(label, data, filename=None):
     for v, i in zip(label, data):
         plt.text(v, i + highest * 0.02, str(i), color='black', ha='center', fontweight='bold', fontsize=8)
     plt.bar(label, data, width=0.5)
-    if filename is not None:
-        plt.savefig(graphic_path + filename)
-    if need_show_plot:
-        plt.show()
+    save_to_storage(filename)
 
 
 def generate_barh_chart(label, data, filename=None):
@@ -29,10 +40,7 @@ def generate_barh_chart(label, data, filename=None):
     for v, i in zip(label, data):
         plt.text(i + highest * 0.01, v, str(i), color='black', va='center', fontweight='bold', fontsize=8)
     plt.barh(label, data, height=0.5)
-    if filename is not None:
-        plt.savefig(graphic_path + filename)
-    if need_show_plot:
-        plt.show()
+    save_to_storage(filename)
 
 
 def generate_pie_chart(label, data, filename=None, title='No-Title'):
@@ -45,10 +53,7 @@ def generate_pie_chart(label, data, filename=None, title='No-Title'):
     [_.set_fontsize(8) for _ in autotexts]
 
     plt.axis('equal')
-    if filename is not None:
-        plt.savefig(graphic_path + filename)
-    if need_show_plot:
-        plt.show()
+    save_to_storage(filename)
 
 
 def bug_data_and_label_classified_in_catalog(bug_list, bug_label, bug_catalog):

@@ -1,5 +1,5 @@
 from module.analysis_util import the_closest_sprint_start_date, get_the_last_sprint_bugs, debug_log_console
-from module.file_util import *
+from module.storage_util import *
 from module.jba_email import send_email_from_graphics
 from module.jira_bug import JiraBugList
 from module.jira_method import is_system_available, system_init, get_fields_in_dict

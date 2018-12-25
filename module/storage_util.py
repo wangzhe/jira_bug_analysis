@@ -3,8 +3,10 @@ import datetime
 import json
 import os
 from shutil import copyfile
+from PIL import Image
 
-from module.sys_invariant import database_path as db
+from module.jira_system import JiraInfo
+from module.sys_invariant import database_path as db, graphic_path
 
 
 def get_database_full_path(filename):
@@ -83,3 +85,10 @@ def write_to_csv(header, data, data_filename='source.csv'):
         for row_data in data:
             row_list = convert_dict_into_list(row_data)
             csv_writer.writerow(row_list)
+
+
+def save_image(filename, buf):
+    if JiraInfo().instance.is_debug():
+        im = Image.open(buf)
+        image_filename = graphic_path + "test" + filename + ".png"
+        im.save(image_filename, 'png')

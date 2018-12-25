@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from module.analysis_util import debug_log_console
-from module.file_util import write_html_to_file
+from module.storage_util import write_html_to_file
 from module.sys_invariant import config_path
 
 
