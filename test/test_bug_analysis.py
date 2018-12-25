@@ -10,7 +10,7 @@ from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module import jira_bug
 from module.storage_util import read_json_from_file, file_recover
 from module.jira_bug import JiraBugList
-from module.sys_invariant import date_format, online_bug_source_in_csv
+from module.sys_invariant import date_format, online_bug_source_in_csv, database_path
 
 
 class TestAnalysis(TestCase):
@@ -54,7 +54,7 @@ class TestAnalysis(TestCase):
 
     def test_generate_online_bug_summary_chart(self):
         bug_summary_json = read_json_from_file(filename)
-        generate_online_bug_summary_chart(bug_summary_json, None)
+        generate_online_bug_summary_chart(bug_summary_json, "test_online_bug_summary_chart.png")
 
     def test_append_latest_sprint_info_when_input_date_duplicated(self):
         expect_json = sprint_online_bug_summary_json_data = read_json_from_file(self.test_filename)
@@ -92,4 +92,6 @@ class TestAnalysis(TestCase):
         generate_bug_unclassified_piechart(bugList)
 
     def test_write_bug_list_to_csv(self):
-        self.assertEqual(online_bug_source_in_csv, write_bug_list_to_csv(bugList))
+        with open(database_path + online_bug_source_in_csv, "rb") as csv_file:
+            binary_csv = csv_file.read()
+        self.assertEqual(binary_csv, write_bug_list_to_csv(bugList))

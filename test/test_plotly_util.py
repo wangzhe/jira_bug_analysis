@@ -11,7 +11,7 @@ class TestPlotlyUtil(TestCase):
         #      datetime.datetime(2011, 5, 5, 9, 0)]
         x = ["2010-12-1", "2011-1-4", "2011-5-5", "2012-1-5", "2013-5-5", "2014-5-5"]
         y = [4, 9, 2, 2, 7, 5]
-        generate_bar_chart(x, y)
+        generate_bar_chart(x, y, "test_generate_bar_chart_when_input_date_and_data.png")
 
     def test_generate_barh_chart_when_input_date_and_data(self):
         # label = [datetime.datetime(2010, 12, 1, 10, 0),
@@ -19,9 +19,9 @@ class TestPlotlyUtil(TestCase):
         #      datetime.datetime(2011, 5, 5, 9, 0)]
         label = ['Low', 'Medium', 'High', 'Highest']
         data = [1, 48, 0, 0]
-        generate_barh_chart(label, data)
+        generate_barh_chart(label, data, "test_generate_barh_chart_when_input_date_and_data.png")
 
     def test_generate_pie_chart_when_input_label_and_data(self):
         label = ['Fore-End', 'Product Logic', 'Server', 'Third Part', 'Wrong Reported']
         data = [7, 3, 15, 3, 15]
-        generate_pie_chart(label, data, "test_some_file")
+        generate_pie_chart(label, data, "test_some_file.png")

@@ -14,11 +14,11 @@ class TestJbaEmail(TestCase):
     def test_compose_email_body(self):
         with open(graphic_path + "test_" + online_bug_summary_png, "rb") as graphic_file:
             binary_img = graphic_file.read()
-        print(type(binary_img))
-        print(binary_img)
         graphs_full_path = [binary_img]
-        attach_file_full_path = database_path + online_bug_source_in_csv
-        email_body = jba_email.compose_email_body(graphs_full_path, attach_file_full_path)
+        with open(database_path + "source.csv", "rb") as source_file:
+            online_bug_source = source_file.read()
+
+        email_body = jba_email.compose_email_body(graphs_full_path, online_bug_source)
         write_html_to_file("test2.eml", email_body.as_string())
         html_text = read_html_from_file("test.eml")
         self.assertEqual(html_text[:10], email_body.as_string()[:10])

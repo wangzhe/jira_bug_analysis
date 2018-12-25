@@ -34,7 +34,7 @@ class JbaEmail:
         def is_debug(self):
             return self.debug_mode
 
-        def compose_email_body(self, graphics, attach_file_full_path):
+        def compose_email_body(self, graphics, online_bug_source):
             msg_content = MIMEMultipart('related')
             msg_content['From'] = "{}".format(self.from_addr)
             msg_content['To'] = ",".join(self.receivers)
@@ -43,7 +43,7 @@ class JbaEmail:
             msg_template = self.generate_msg_template_according_to_graphics(graphics)
 
             msg_content = self.fill_content_into_template(graphics, msg_content, msg_template)
-            msg_content = self.attach_file_into_content(attach_file_full_path, msg_content)
+            msg_content = self.attach_binary_csv_into_content(online_bug_source, msg_content)
             return msg_content
 
         def send_email(self, msg_content):
@@ -73,14 +73,9 @@ class JbaEmail:
                     smtp.close()
 
         @staticmethod
-        def attach_file_into_content(attach_file_full_path, msg_content):
+        def attach_binary_csv_into_content(online_bug_source, msg_content):
             msg_content.attach(MIMEText("source.csv"))
-            with open(attach_file_full_path, "rb") as attach_file:
-                part = MIMEApplication(
-                    attach_file.read(),
-                    Name="source.csv"
-                )
-            # After the file is closed
+            part = MIMEApplication(online_bug_source, Name="source.csv")
             part['Content-Disposition'] = 'attachment; filename="%s"' % "source.csv"
             msg_content.attach(part)
             return msg_content
@@ -114,8 +109,8 @@ class JbaEmail:
             JbaEmail.instance = JbaEmail.__JbaEmail(getpass.getuser())
 
 
-def send_email_from_graphics(graphs_full_path, attach_file_full_path):
+def send_email_from_graphics(graphs_full_path, online_bug_source):
     jba_email = JbaEmail().instance
-    email_body = jba_email.compose_email_body(graphs_full_path, attach_file_full_path)
+    email_body = jba_email.compose_email_body(graphs_full_path, online_bug_source)
     write_html_to_file("test.eml", email_body.as_string())
     jba_email.send_email(email_body.as_string())

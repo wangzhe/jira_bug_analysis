@@ -111,8 +111,7 @@ def write_bug_list_to_csv(bug_list):
     if bug_list.bugs[0] is None:
         return
     column_header = bug_list.bugs[0].keys()
-    write_to_csv(column_header, bug_list.bugs, online_bug_source_in_csv)
-    return online_bug_source_in_csv
+    return write_to_csv(column_header, bug_list.bugs, online_bug_source_in_csv)
 
 
 def do_bug_analysis():
@@ -139,10 +138,9 @@ def do_bug_analysis():
     unclassified_piechart = generate_bug_unclassified_piechart(bug_list)
     debug_log_console("unclassified pie chart filename generated")
 
-    online_bug_source_filename = write_bug_list_to_csv(bug_list)
-    debug_log_console(online_bug_source_filename)
+    online_bug_source = write_bug_list_to_csv(bug_list)
+    debug_log_console(online_bug_source)
 
     # final step - compose and send email
     graphics = [summary_barchart, priority_barchart, classification_piechart, unclassified_piechart]
-    file_full_path = database_path + online_bug_source_filename
-    send_email_from_graphics(graphics, file_full_path)
+    send_email_from_graphics(graphics, online_bug_source)

@@ -7,4 +7,6 @@ from module.pyplot_util import generate_bar_chart, generate_barh_chart, generate
 class TestMain(TestCase):
 
     def test_main_process(self):
-        do_bug_analysis()
+        # do_bug_analysis()
+        pass
+
