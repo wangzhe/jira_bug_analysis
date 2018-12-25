@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from module.file_util import read_html_from_file, write_html_to_file
+from module.storage_util import read_html_from_file, write_html_to_file
 from module.jba_email import JbaEmail
 from module.sys_invariant import graphic_path, online_bug_summary_png, database_path, online_bug_source_in_csv
 

@@ -2,7 +2,7 @@ import datetime
 import json
 from unittest import TestCase
 
-from module.file_util import read_json_from_file
+from module.storage_util import read_json_from_file
 from module.jira_bug import JiraBugList
 
 

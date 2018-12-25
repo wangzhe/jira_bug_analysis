@@ -24,4 +24,4 @@ class TestPlotlyUtil(TestCase):
     def test_generate_pie_chart_when_input_date_and_data(self):
         label = ['Fore-End', 'Product Logic', 'Server', 'Third Part', 'Wrong Reported']
         data = [7, 3, 15, 3, 15]
-        generate_pie_chart(label, data)
+        generate_pie_chart(label, data, "some_file")

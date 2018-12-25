@@ -8,7 +8,7 @@ from bug_analysis import store_count_into_file, generate_online_bug_summary_char
     generate_bug_classification_piechart, generate_bug_unclassified_piechart, write_bug_list_to_csv
 from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module import jira_bug
-from module.file_util import read_json_from_file, file_recover
+from module.storage_util import read_json_from_file, file_recover
 from module.jira_bug import JiraBugList
 from module.sys_invariant import date_format, online_bug_source_in_csv
 
