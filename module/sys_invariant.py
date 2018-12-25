@@ -5,7 +5,8 @@ date_format = {
     "in_file": "%Y/%m/%d"
 }
 
-need_show_plot = False
+need_show_plot = False  # warning: variant
+local_storage = True    # warning: variant
 
 show_last_n_bars = -6
 sprint_bug_summary_filename = "sprint_bug_summary.json"

@@ -89,10 +89,8 @@ class JbaEmail:
         def fill_content_into_template(graphics, msg_content, msg_template):
             msg_content.attach(msg_template)
             index = 0
-            for file in graphics:
-                fp = open(file, 'rb')
-                msg_image = MIMEImage(fp.read())
-                fp.close()
+            for graphic in graphics:
+                msg_image = MIMEImage(graphic)
                 msg_image.add_header('Content-ID', '<' + str(index) + '>')
                 index += 1
                 msg_content.attach(msg_image)

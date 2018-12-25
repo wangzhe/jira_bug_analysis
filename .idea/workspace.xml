@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9edb28b0-04af-4317-8941-553ec52c8fca" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test/test_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bug_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/bug_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/file_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/storage_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/jba_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/jba_email.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/jira_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/jira_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/oss_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/oss_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/pyplot_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/pyplot_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/storage_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/storage_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/sys_invariant.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/sys_invariant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/board.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/board.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/stories_in_sprint.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/stories_in_sprint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_bug_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_bug_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/database/sprint_bug_summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/database/sprint_bug_summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/database/test.eml" beforeDir="false" afterPath="$PROJECT_DIR$/test/database/test.eml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_jba_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_jba_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_jira_bug.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_jira_bug.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_oss_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_oss_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_plotly_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_plotly_util.py" afterDir="false" />
     </list>
@@ -28,20 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zhewang.local" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/zhewang.local">
+      <file leaf-file-name="jba_email.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/jba_email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="13" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oss_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/oss_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+            <state relative-caret-position="236">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -49,73 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="bug_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bug_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storage_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/storage_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="93" column="38" lean-forward="true" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+            <state relative-caret-position="409">
+              <caret line="146" column="63" lean-forward="true" selection-start-line="146" selection-start-column="63" selection-end-line="146" selection-end-column="63" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_bug_analysis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_bug_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_invariant.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_plotly_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analysis_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/analysis_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_oss_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_oss_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +56,8 @@
       <file leaf-file-name="pyplot_util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -202,33 +134,34 @@
         <option value="$PROJECT_DIR$/sample/stories_in_sprint.json" />
         <option value="$PROJECT_DIR$/database/sprint_bug_summary_11_08_18.json" />
         <option value="$PROJECT_DIR$/module/jira_bug.py" />
-        <option value="$PROJECT_DIR$/test/test_bug_analysis.py" />
-        <option value="$PROJECT_DIR$/test/test_jba_email.py" />
         <option value="$PROJECT_DIR$/analyzer.py" />
         <option value="$PROJECT_DIR$/aliyun/index.py" />
-        <option value="$PROJECT_DIR$/module/sys_invariant.py" />
         <option value="$PROJECT_DIR$/database/sprint_bug_summary.json" />
         <option value="$PROJECT_DIR$/module/test_file_util.py" />
-        <option value="$PROJECT_DIR$/index.py" />
-        <option value="$PROJECT_DIR$/bug_analysis.py" />
-        <option value="$PROJECT_DIR$/module/jira_system.py" />
         <option value="$PROJECT_DIR$/module/jira_method.py" />
         <option value="$PROJECT_DIR$/module/file_util.py" />
         <option value="$PROJECT_DIR$/config/zhewang.local" />
         <option value="$PROJECT_DIR$/module/analysis_util.py" />
-        <option value="$PROJECT_DIR$/module/jba_email.py" />
         <option value="$PROJECT_DIR$/test/config/zhewang.local" />
         <option value="$PROJECT_DIR$/config/default.local" />
-        <option value="$PROJECT_DIR$/test/database/sprint_bug_summary.json" />
         <option value="$PROJECT_DIR$/test/database/test_sprint_bug_summary.json" />
         <option value="$PROJECT_DIR$/test/database/test_oss_bug_summary.json" />
-        <option value="$PROJECT_DIR$/module/oss_util.py" />
-        <option value="$PROJECT_DIR$/test/test_oss_util.py" />
-        <option value="$PROJECT_DIR$/module/pyplot_util.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/test/test_plotly_util.py" />
-        <option value="$PROJECT_DIR$/module/storage_util.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/module/sys_invariant.py" />
+        <option value="$PROJECT_DIR$/test/test_bug_analysis.py" />
+        <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/test/test_oss_util.py" />
+        <option value="$PROJECT_DIR$/module/oss_util.py" />
+        <option value="$PROJECT_DIR$/module/storage_util.py" />
+        <option value="$PROJECT_DIR$/module/jira_system.py" />
+        <option value="$PROJECT_DIR$/test/test_plotly_util.py" />
+        <option value="$PROJECT_DIR$/test/test_main.py" />
+        <option value="$PROJECT_DIR$/test/database/sprint_bug_summary.json" />
+        <option value="$PROJECT_DIR$/test/test_jba_email.py" />
+        <option value="$PROJECT_DIR$/module/pyplot_util.py" />
+        <option value="$PROJECT_DIR$/bug_analysis.py" />
+        <option value="$PROJECT_DIR$/module/jba_email.py" />
       </list>
     </option>
   </component>
@@ -281,12 +214,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jira_bug_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -303,6 +230,7 @@
       <recent name="$PROJECT_DIR$/aliyun" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/test/database" />
       <recent name="$PROJECT_DIR$/config" />
     </key>
@@ -319,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data">
+  <component name="RunManager" selected="Python tests.Unittests for test_main.TestMain.test_main_process">
     <configuration name="all_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,25 +266,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jira_bug_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Unittests for test_oss_util.TestOSSUtil.test_oss_available" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_jba_email.TestJbaEmail.test_compose_email_body" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -366,10 +276,10 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_oss_util.TestOSSUtil.test_oss_available&quot;" />
+      <option name="_new_target" value="&quot;test_jba_email.TestJbaEmail.test_compose_email_body&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_main.TestMain.test_main_process" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,10 +289,10 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data&quot;" />
+      <option name="_new_target" value="&quot;test_main.TestMain.test_main_process&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test.test_oss_util.TestOSSUtil.test_oss_available" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_oss_util.TestOSSUtil.test_save_image_oss" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,23 +302,36 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_oss_util.TestOSSUtil.test_oss_available&quot;" />
+      <option name="_new_target" value="&quot;test_oss_util.TestOSSUtil.test_save_image_oss&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for test.test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="jira_bug_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list>
       <item itemvalue="Python.all_test" />
-      <item itemvalue="Python.index" />
-      <item itemvalue="Python tests.Unittests for test.test_oss_util.TestOSSUtil.test_oss_available" />
-      <item itemvalue="Python tests.Unittests for test_oss_util.TestOSSUtil.test_oss_available" />
-      <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" />
+      <item itemvalue="Python tests.Unittests for test.test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" />
+      <item itemvalue="Python tests.Unittests for test_oss_util.TestOSSUtil.test_save_image_oss" />
+      <item itemvalue="Python tests.Unittests for test_main.TestMain.test_main_process" />
+      <item itemvalue="Python tests.Unittests for test_jba_email.TestJbaEmail.test_compose_email_body" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" />
+        <item itemvalue="Python tests.Unittests for test_main.TestMain.test_main_process" />
+        <item itemvalue="Python tests.Unittests for test_jba_email.TestJbaEmail.test_compose_email_body" />
         <item itemvalue="Python.all_test" />
-        <item itemvalue="Python tests.Unittests for test_oss_util.TestOSSUtil.test_oss_available" />
-        <item itemvalue="Python tests.Unittests for test.test_oss_util.TestOSSUtil.test_oss_available" />
-        <item itemvalue="Python.index" />
+        <item itemvalue="Python tests.Unittests for test_oss_util.TestOSSUtil.test_save_image_oss" />
+        <item itemvalue="Python tests.Unittests for test.test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" />
       </list>
     </recent_temporary>
   </component>
@@ -426,35 +349,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_oss_util_TestOSSUtil_test_oss_available - 2018.12.24 at 21h 19m 38s.xml">
-      <configuration name="Unittests for test_oss_util.TestOSSUtil.test_oss_available" configurationId="tests" />
+    <history-entry file="Unittests_for_test_oss_util_TestOSSUtil_test_save_image_oss - 2018.12.25 at 15h 00m 54s.xml">
+      <configuration name="Unittests for test_oss_util.TestOSSUtil.test_save_image_oss" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 49m 46s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_oss_util_TestOSSUtil_test_save_image_oss - 2018.12.25 at 15h 02m 24s.xml">
+      <configuration name="Unittests for test_oss_util.TestOSSUtil.test_save_image_oss" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 50m 25s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 34m 52s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 51m 05s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_jba_email_TestJbaEmail_test_compose_email_body - 2018.12.25 at 15h 41m 29s.xml">
+      <configuration name="Unittests for test_jba_email.TestJbaEmail.test_compose_email_body" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 51m 18s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_jba_email_TestJbaEmail_test_compose_email_body - 2018.12.25 at 15h 41m 46s.xml">
+      <configuration name="Unittests for test_jba_email.TestJbaEmail.test_compose_email_body" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 51m 43s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 46m 57s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 52m 55s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 51m 10s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 53m 18s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 51m 57s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 53m 29s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 54m 08s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_date_and_data - 2018.12.25 at 11h 54m 07s.xml">
-      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_date_and_data" configurationId="tests" />
+    <history-entry file="Unittests_for_test_main_TestMain_test_main_process - 2018.12.25 at 15h 55m 41s.xml">
+      <configuration name="Unittests for test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -490,20 +413,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/jba_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bug_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
@@ -606,11 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/database/test2.eml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5069" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/test/test_getpass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -645,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_jba_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/jira_bug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -659,35 +556,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" selection-start-line="23" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/jira_system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="32" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/jedi/evaluate/analysis.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/jba_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/whoami.demolocal">
       <provider selected="true" editor-type-id="text-editor" />
@@ -699,51 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/config/zhewang.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bug_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1808">
-          <caret line="138" column="39" lean-forward="true" selection-start-line="138" selection-start-column="39" selection-end-line="138" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/jira_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/database/test_sprint_bug_summary.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/database/sprint_bug_summary.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="549" lean-forward="true" selection-end-column="549" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/sprint_bug_summary.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="32" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -757,13 +586,43 @@
     <entry file="file://$PROJECT_DIR$/test/test_fields.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphics/testsome_file.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/jira_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphics/test_oss_upload_file_12_25_18.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_oss_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -774,81 +633,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/analysis_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="131">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/database/test2.eml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
+    <entry file="file://$PROJECT_DIR$/test/test_bug_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/graphics/testsome_file.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/oss_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/storage_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="93" column="38" lean-forward="true" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+        <state relative-caret-position="439">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_bug_analysis.py">
+    <entry file="file://$PROJECT_DIR$/module/oss_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="311">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/analysis_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/jira_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/config/zhewang.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/sprint_bug_summary.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="36" column="4" lean-forward="true" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/database/sprint_bug_summary.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_jba_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="146" column="63" lean-forward="true" selection-start-line="146" selection-start-column="63" selection-end-line="146" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/jba_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

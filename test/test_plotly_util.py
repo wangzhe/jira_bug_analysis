@@ -21,7 +21,7 @@ class TestPlotlyUtil(TestCase):
         data = [1, 48, 0, 0]
         generate_barh_chart(label, data)
 
-    def test_generate_pie_chart_when_input_date_and_data(self):
+    def test_generate_pie_chart_when_input_label_and_data(self):
         label = ['Fore-End', 'Product Logic', 'Server', 'Third Part', 'Wrong Reported']
         data = [7, 3, 15, 3, 15]
-        generate_pie_chart(label, data, "some_file")
+        generate_pie_chart(label, data, "test_some_file")

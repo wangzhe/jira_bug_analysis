@@ -1,12 +1,12 @@
 from module.analysis_util import the_closest_sprint_start_date, get_the_last_sprint_bugs, debug_log_console
-from module.storage_util import *
 from module.jba_email import send_email_from_graphics
 from module.jira_bug import JiraBugList
 from module.jira_method import is_system_available, system_init, get_fields_in_dict
 from module.pyplot_util import *
 from module.pyplot_util import bug_data_and_label_classified_in_catalog
+from module.storage_util import *
 from module.sys_invariant import date_format, show_last_n_bars, get_online_bug_summary_png_filename, \
-    get_sprint_bug_summary_filename, graphic_path, online_bug_priority_png, online_bug_classification_png, \
+    get_sprint_bug_summary_filename, online_bug_priority_png, online_bug_classification_png, \
     online_bug_unclassified_png, online_bug_source_in_csv, database_path
 
 
@@ -38,7 +38,7 @@ def append_latest_sprint_info(last_sprint_bugs_count, sprint_online_bug_summary_
 def generate_online_bug_summary_chart(sprint_bug_summary_json, filename):
     dates, counts = convert_summary_into_dates_and_counts(sprint_bug_summary_json)
     debug_log_console(dates)
-    generate_bar_chart(dates, counts, filename)
+    return generate_bar_chart(dates, counts, filename)
 
 
 def convert_summary_into_dates_and_counts(sprint_bug_summary_json):
@@ -61,9 +61,7 @@ def generate_bug_summary_barchart(bug_list):
                                                     sprint_start_date)
 
     # generate chart
-    generate_online_bug_summary_chart(sprint_bug_summary_json, get_online_bug_summary_png_filename())
-
-    return get_online_bug_summary_png_filename()
+    return generate_online_bug_summary_chart(sprint_bug_summary_json, get_online_bug_summary_png_filename())
 
 
 def get_bug_list(basic_base64_token):
@@ -84,8 +82,7 @@ def generate_bug_priority_barhchart(bug_list):
                                                                              'priority')
     debug_log_console(str(priority_data))
     debug_log_console(str(priority_label))
-    generate_barh_chart(priority_label, priority_data, online_bug_priority_png)
-    return online_bug_priority_png
+    return generate_barh_chart(priority_label, priority_data, online_bug_priority_png)
 
 
 def generate_bug_classification_piechart(bug_list):
@@ -95,8 +92,7 @@ def generate_bug_classification_piechart(bug_list):
                                                                              'bug classify')
     debug_log_console(str(classify_data))
     debug_log_console(str(classify_label))
-    generate_pie_chart(classify_label, classify_data, online_bug_classification_png, "Classification")
-    return online_bug_classification_png
+    return generate_pie_chart(classify_label, classify_data, online_bug_classification_png, "Classification")
 
 
 def generate_bug_unclassified_piechart(bug_list):
@@ -108,8 +104,7 @@ def generate_bug_unclassified_piechart(bug_list):
     unclassified_data = [sum(classify_data), (len(bug_list.bugs) - sum(classify_data))]
     debug_log_console(str(unclassified_label))
     debug_log_console(str(unclassified_data))
-    generate_pie_chart(unclassified_label, unclassified_data, online_bug_unclassified_png, "Unclassified")
-    return online_bug_unclassified_png
+    return generate_pie_chart(unclassified_label, unclassified_data, online_bug_unclassified_png, "Unclassified")
 
 
 def write_bug_list_to_csv(bug_list):
@@ -129,28 +124,25 @@ def do_bug_analysis():
     bug_list = get_bug_list(basic_base64_token)
 
     # No.1 graphic - bug summary
-    summary_barchart_filename = generate_bug_summary_barchart(bug_list)
-    debug_log_console(summary_barchart_filename)
+    summary_barchart = generate_bug_summary_barchart(bug_list)
+    debug_log_console("summary bar chart image generated")
 
     # No.2 graphic - bug priority
-    priority_barchart_filename = generate_bug_priority_barhchart(bug_list)
-    debug_log_console(priority_barchart_filename)
+    priority_barchart = generate_bug_priority_barhchart(bug_list)
+    debug_log_console("priority bar chart filename generated")
 
     # No.3 graphic - bug classification
-    classification_piechart_filename = generate_bug_classification_piechart(bug_list)
-    debug_log_console(priority_barchart_filename)
+    classification_piechart = generate_bug_classification_piechart(bug_list)
+    debug_log_console("classification bar chart filename generated")
 
     # No.4 graphic - bug unclassified
-    unclassified_piechart_filename = generate_bug_unclassified_piechart(bug_list)
-    debug_log_console(priority_barchart_filename)
+    unclassified_piechart = generate_bug_unclassified_piechart(bug_list)
+    debug_log_console("unclassified pie chart filename generated")
 
     online_bug_source_filename = write_bug_list_to_csv(bug_list)
     debug_log_console(online_bug_source_filename)
 
     # final step - compose and send email
-    graphs_full_path = [graphic_path + summary_barchart_filename,
-                        graphic_path + priority_barchart_filename,
-                        graphic_path + classification_piechart_filename,
-                        graphic_path + unclassified_piechart_filename]
+    graphics = [summary_barchart, priority_barchart, classification_piechart, unclassified_piechart]
     file_full_path = database_path + online_bug_source_filename
-    send_email_from_graphics(graphs_full_path, file_full_path)
+    send_email_from_graphics(graphics, file_full_path)

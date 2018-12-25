@@ -2,10 +2,13 @@ import csv
 import datetime
 import json
 import os
+import io
 from shutil import copyfile
+
 from PIL import Image
 
-from module.jira_system import JiraInfo
+from module import sys_invariant
+from module.oss_util import save_image_oss
 from module.sys_invariant import database_path as db, graphic_path
 
 
@@ -87,8 +90,7 @@ def write_to_csv(header, data, data_filename='source.csv'):
             csv_writer.writerow(row_list)
 
 
-def save_image(filename, buf):
-    if JiraInfo().instance.is_debug():
-        im = Image.open(buf)
-        image_filename = graphic_path + "test" + filename + ".png"
-        im.save(image_filename, 'png')
+def save_image(filename, binary_img):
+    im = Image.open(io.BytesIO(binary_img))
+    image_filename = graphic_path + filename
+    im.save(image_filename, 'png')
