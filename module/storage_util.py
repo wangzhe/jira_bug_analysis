@@ -5,12 +5,10 @@ import json
 import os
 from shutil import copyfile
 
-from PIL import Image
-
 from module import oss_util, sys_invariant
 from module.analysis_util import debug_log_console
 from module.jira_system import JiraInfo
-from module.sys_invariant import database_path as db, graphic_path
+from module.sys_invariant import database_path as db
 
 
 def get_database_full_path(filename):
@@ -132,11 +130,11 @@ def read_html_from_file(data_filename):
     return html_text
 
 
-def save_image(filename, binary_img):
-    # only for local test
-    if not JiraInfo().instance.is_debug():
-        return
-
-    im = Image.open(io.BytesIO(binary_img))
-    image_filename = graphic_path + filename
-    im.save(image_filename, 'png')
+# def save_image(filename, binary_img):
+#     # only for local test
+#     if not JiraInfo().instance.is_debug():
+#         return
+#
+#     im = Image.open(io.BytesIO(binary_img))
+#     image_filename = graphic_path + filename
+#     im.save(image_filename, 'png')

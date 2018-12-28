@@ -2,9 +2,6 @@ import io
 
 import matplotlib.pyplot as plt
 
-from module.jira_system import JiraInfo
-from module.storage_util import save_image
-
 
 def save_to_mime_img(filename):
     buf = io.BytesIO()
@@ -12,9 +9,8 @@ def save_to_mime_img(filename):
     buf.seek(0)
     binary_img = buf.getvalue()
     buf.close()
-
-    if JiraInfo().instance.is_debug():
-        save_image(filename, binary_img)
+    # if JiraInfo().instance.is_debug():
+    #     save_image(filename, binary_img)
 
     return binary_img
 
