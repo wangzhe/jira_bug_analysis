@@ -1,4 +1,4 @@
 requests
-matplotlib
+matplotlib==2.0.2
 oss2
 Pillow

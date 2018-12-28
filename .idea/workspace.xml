@@ -5,8 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/jira_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/jira_method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/pyplot_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/pyplot_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/board.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/board.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/stories_in_sprint.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/stories_in_sprint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/database/sprint_bug_summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/database/sprint_bug_summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/database/test.eml" beforeDir="false" afterPath="$PROJECT_DIR$/test/database/test.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_plotly_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_plotly_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="storage_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/storage_util.py">
+      <file leaf-file-name="test_plotly_util.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pyplot_util.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manual_test_main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/manual_test_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -33,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/bug_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding>
                 <element signature="e#0#107#0" expanded="true" />
               </folding>
@@ -41,32 +60,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sys_invariant.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
+      <file leaf-file-name="pyplot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/pyplot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="166">
+              <caret line="2712" column="4" selection-start-line="2712" selection-start-column="4" selection-end-line="2712" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_storage_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_storage_util.py">
+      <file leaf-file-name="my_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="321">
+              <caret line="32" selection-start-line="32" selection-end-line="33" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jira_system.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/jira_system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -75,49 +85,7 @@
         <entry file="file://$PROJECT_DIR$/config/zhewang.local">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.local" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/default.local">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="40" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="23" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pyplot_util.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -133,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>online_bug_unclassified_png</find>
       <find>configparser.ConfigParser()</find>
       <find>source.csv</find>
       <find>account</find>
@@ -153,16 +120,17 @@
       <find>.get_debug_against_oss</find>
       <find>debug_against_oss</find>
       <find>pil</find>
-      <find />
+      <find>PIL</find>
       <find>_imaging</find>
-      <find />
-      <find />
-      <find />
-      <find />
+      <find>_imaging</find>
+      <find>PIL</find>
+      <find>PIL</find>
+      <find>pil</find>
       <find>dumps</find>
       <find>error</find>
       <find>matplotlib</find>
-      <find />
+      <find>import matplotlib</find>
+      <find>rects1</find>
     </findStrings>
     <replaceStrings>
       <replace>JbaEmail</replace>
@@ -179,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sample/data.json" />
         <option value="$PROJECT_DIR$/sample/data_online_bug.json" />
         <option value="$PROJECT_DIR$/test/database/test_data_online_bug_completed.json" />
         <option value="$PROJECT_DIR$/test/database/test_data_online_bug_unfinished.json" />
@@ -203,7 +170,6 @@
         <option value="$PROJECT_DIR$/test/database/test_oss_bug_summary.json" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config/default.local" />
-        <option value="$PROJECT_DIR$/test/test_plotly_util.py" />
         <option value="$PROJECT_DIR$/test/database/sprint_bug_summary_12_26_18.json" />
         <option value="$PROJECT_DIR$/test/config/zhewang.local" />
         <option value="$PROJECT_DIR$/module/test_storage_util.py" />
@@ -222,13 +188,15 @@
         <option value="$PROJECT_DIR$/test/test_jba_email.py" />
         <option value="$PROJECT_DIR$/module/jira_system.py" />
         <option value="$PROJECT_DIR$/config/zhewang.local" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/module/sys_invariant.py" />
         <option value="$PROJECT_DIR$/database/sprint_bug_summary.json" />
         <option value="$PROJECT_DIR$/test/test_storage_util.py" />
         <option value="$PROJECT_DIR$/bug_analysis.py" />
         <option value="$PROJECT_DIR$/module/storage_util.py" />
         <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/my_plot.py" />
+        <option value="$PROJECT_DIR$/test/test_plotly_util.py" />
         <option value="$PROJECT_DIR$/module/pyplot_util.py" />
       </list>
     </option>
@@ -260,6 +228,27 @@
               <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jira_bug_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jira_bug_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jira_bug_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jira_bug_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jira_bug_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,15 +261,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/aliyun" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/test/database" />
       <recent name="$PROJECT_DIR$/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/aliyun" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Unittests for manual_test_main.TestMain.test_main_process">
     <configuration name="all_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,43 +303,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jira_bug_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jira_bug_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for manual_test_main.TestMain.test_main_process" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -360,10 +313,10 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_storage_util.TestStorageUtil.test_read_json_from_file_in_local&quot;" />
+      <option name="_new_target" value="&quot;manual_test_main.TestMain.test_main_process&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_bar_chart_when_input_date_and_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="jira_bug_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -373,23 +326,49 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss&quot;" />
+      <option name="_new_target" value="&quot;test_plotly_util.TestPlotlyUtil.test_generate_bar_chart_when_input_date_and_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="jira_bug_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="jira_bug_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_bar_chart_when_input_date_and_data" />
+      <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" />
+      <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" />
       <item itemvalue="Python.all_test" />
-      <item itemvalue="Python.index" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" />
-      <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss" />
+      <item itemvalue="Python tests.Unittests for manual_test_main.TestMain.test_main_process" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss" />
-        <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" />
-        <item itemvalue="Python.index" />
+        <item itemvalue="Python tests.Unittests for manual_test_main.TestMain.test_main_process" />
         <item itemvalue="Python.all_test" />
+        <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" />
+        <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" />
+        <item itemvalue="Python tests.Unittests for test_plotly_util.TestPlotlyUtil.test_generate_bar_chart_when_input_date_and_data" />
       </list>
     </recent_temporary>
   </component>
@@ -407,35 +386,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 15h 54m 34s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 20h 59m 02s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 15h 54m 49s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 20h 59m 18s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 15h 55m 07s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 20h 59m 29s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 53m 16s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 21h 00m 04s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 53m 28s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 21h 00m 17s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 53m 41s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_barh_chart_when_input_date_and_data - 2018.12.28 at 21h 00m 24s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_barh_chart_when_input_date_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 54m 00s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_label_and_data - 2018.12.28 at 21h 01m 18s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 55m 13s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_label_and_data - 2018.12.28 at 21h 01m 45s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_local - 2018.12.28 at 18h 57m 17s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" configurationId="tests" />
+    <history-entry file="Unittests_for_test_plotly_util_TestPlotlyUtil_test_generate_pie_chart_when_input_label_and_data - 2018.12.28 at 21h 02m 16s.xml">
+      <configuration name="Unittests for test_plotly_util.TestPlotlyUtil.test_generate_pie_chart_when_input_label_and_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_storage_util_TestStorageUtil_test_read_json_from_file_in_oss - 2018.12.28 at 18h 57m 44s.xml">
-      <configuration name="Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss" configurationId="tests" />
+    <history-entry file="Unittests_for_manual_test_main_TestMain_test_main_process - 2018.12.28 at 21h 03m 42s.xml">
+      <configuration name="Unittests for manual_test_main.TestMain.test_main_process" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -451,7 +430,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978102" visible="true" weight="0.30128205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948717" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -482,52 +461,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/database/test_data_online_bug_unfinished.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="656" selection-start-line="656" selection-end-line="656" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/data_online_bug.json" />
-    <entry file="file://$PROJECT_DIR$/sample/sample.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" selection-start-line="28" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/board.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5880">
-          <caret line="392" column="31" selection-start-line="392" selection-start-column="21" selection-end-line="392" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/stories_in_sprint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5175">
-          <caret line="1228" column="32" selection-start-line="1228" selection-start-column="32" selection-end-line="1228" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample/fields.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10845">
@@ -608,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/config/zhewang.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/all_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -686,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/manual_test_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_bug_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -717,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8724">
@@ -731,13 +643,6 @@
           <folding>
             <element signature="e#873#933#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -770,7 +675,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -781,20 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bug_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_storage_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -811,20 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/zhewang.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="40" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -835,13 +716,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="40" selection-start-line="22" selection-start-column="26" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/online_bug_summary.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="1863" column="8" selection-start-line="1863" selection-start-column="8" selection-end-line="1863" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphics/online_bug_classification.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bug_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphics/online_bug_summary.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="32" selection-start-line="32" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphics/test_generate_bar_chart_when_input_date_and_data.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="2712" column="4" selection-start-line="2712" selection-start-column="4" selection-end-line="2712" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_plotly_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zhewang.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/config/zhewang.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/manual_test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,10 @@
-import io
 import matplotlib
-import matplotlib.pyplot as plt
+
 matplotlib.use('Agg')
+
+import io
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 def save_to_mime_img(filename):
@@ -12,33 +15,42 @@ def save_to_mime_img(filename):
     buf.close()
     # if JiraInfo().instance.is_debug():
     #     save_image(filename, binary_img)
-
+    # plt.show()
     return binary_img
 
 
 def generate_bar_chart(label, data, filename=None):
-    plt.clf()
-    plt.title('Online Bug Summary')
-    plt.xlabel("Date", fontsize=8)
-    plt.ylabel("Count", fontsize=8)
+    ind = np.arange(len(data))
+    fig, ax = plt.subplots()
+    rects = ax.bar(ind, data, width=0.5)
+
+    ax.set_title('Online Bug Summary')
+    ax.set_ylabel("Count", fontsize=8)
+    ax.set_xticks(ind)
+    ax.set_xticklabels(label, fontsize=8)
 
     highest = max(data)
-    for v, i in zip(label, data):
-        plt.text(v, i + highest * 0.02, str(i), color='black', ha='center', fontweight='bold', fontsize=8)
-    plt.bar(label, data, width=0.5)
+    for rect, i in zip(rects, data):
+        ax.text(rect.get_x() + rect.get_width() / 2, i + highest * 0.02, str(i), color='black', ha='center',
+                fontweight='bold', fontsize=8)
     return save_to_mime_img(filename)
 
 
 def generate_barh_chart(label, data, filename=None):
-    plt.clf()
-    plt.title('Priority')
-    plt.xlabel("Count", fontsize=8)
-    plt.ylabel("Level", fontsize=8)
+    ind = np.arange(len(data))
+    fig, ax = plt.subplots()
+    rects = ax.barh(ind, data, height=0.5)
+
+    ax.set_title('Priority')
+    ax.set_xlabel("Count", fontsize=8)
+    ax.set_ylabel("Level", fontsize=8)
+    ax.set_yticks(ind)
+    ax.set_yticklabels(label, fontsize=8)
 
     highest = max(data)
-    for v, i in zip(label, data):
-        plt.text(i + highest * 0.01, v, str(i), color='black', va='center', fontweight='bold', fontsize=8)
-    plt.barh(label, data, height=0.5)
+    for rect, i in zip(rects, data):
+        ax.text(i + highest * 0.03, rect.get_y() + rect.get_height() / 2, str(i), color='black', ha='center',
+                fontweight='bold', fontsize=8)
     return save_to_mime_img(filename)
 
 

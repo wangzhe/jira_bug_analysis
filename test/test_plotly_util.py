@@ -10,7 +10,7 @@ class TestPlotlyUtil(TestCase):
         #      datetime.datetime(2011, 1, 4, 9, 0),
         #      datetime.datetime(2011, 5, 5, 9, 0)]
         x = ["2010-12-1", "2011-1-4", "2011-5-5", "2012-1-5", "2013-5-5", "2014-5-5"]
-        y = [4, 9, 2, 2, 7, 5]
+        y = [60, 75, 40, 45, 67, 45]
         generate_bar_chart(x, y, "test_generate_bar_chart_when_input_date_and_data.png")
 
     def test_generate_barh_chart_when_input_date_and_data(self):
