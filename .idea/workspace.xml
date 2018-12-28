@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9edb28b0-04af-4317-8941-553ec52c8fca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/sprint_bug_summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/database/sprint_bug_summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/jira_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/jira_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/storage_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/storage_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/sys_invariant.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/sys_invariant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/pyplot_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/pyplot_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/board.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/board.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/stories_in_sprint.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/stories_in_sprint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_storage_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_storage_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="storage_util.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="storage_util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/storage_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+            <state relative-caret-position="39">
+              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -49,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -84,6 +80,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="default.local" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/default.local">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="23" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,8 +101,8 @@
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="285">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -105,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pyplot_util.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pyplot_util.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -128,8 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scrum</find>
-      <find>customfield_10059</find>
       <find>online_bug_unclassified_png</find>
       <find>configparser.ConfigParser()</find>
       <find>source.csv</find>
@@ -158,12 +161,17 @@
       <find />
       <find>dumps</find>
       <find>error</find>
+      <find>matplotlib</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>JbaEmail</replace>
       <replace>company</replace>
       <replace>JIRA</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/module</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -215,13 +223,13 @@
         <option value="$PROJECT_DIR$/module/jira_system.py" />
         <option value="$PROJECT_DIR$/config/zhewang.local" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/module/pyplot_util.py" />
-        <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/module/sys_invariant.py" />
         <option value="$PROJECT_DIR$/database/sprint_bug_summary.json" />
         <option value="$PROJECT_DIR$/test/test_storage_util.py" />
         <option value="$PROJECT_DIR$/bug_analysis.py" />
         <option value="$PROJECT_DIR$/module/storage_util.py" />
+        <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/module/pyplot_util.py" />
       </list>
     </option>
   </component>
@@ -260,7 +268,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -377,11 +385,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_oss" />
         <item itemvalue="Python tests.Unittests for test_storage_util.TestStorageUtil.test_read_json_from_file_in_local" />
         <item itemvalue="Python.index" />
         <item itemvalue="Python.all_test" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -434,14 +442,14 @@
     <frame x="0" y="23" width="1391" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963504" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50218976" side_tool="true" weight="0.47692308" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978102" visible="true" weight="0.30128205" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978102" visible="true" weight="0.30128205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -738,13 +746,6 @@
         <state relative-caret-position="-3895" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/IPython/core/tests/test_pylabtools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -759,27 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/sys_invariant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/zhewang.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -787,16 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,10 +803,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/storage_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+        <state relative-caret-position="39">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zhewang.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/pyplot_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

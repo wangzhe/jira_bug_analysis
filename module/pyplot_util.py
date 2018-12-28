@@ -1,6 +1,7 @@
 import io
-
+import matplotlib
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')
 
 
 def save_to_mime_img(filename):
