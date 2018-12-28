@@ -6,7 +6,7 @@ date_format = {
 }
 
 need_show_plot = False  # warning: variant
-local_storage = True    # warning: variant
+debug_against_oss = False    # warning: variant
 
 show_last_n_bars = -6
 sprint_bug_summary_filename = "sprint_bug_summary.json"
@@ -20,6 +20,10 @@ graphic_path = "graphics/"
 database_path = "database/"
 config_path = "config/"
 img_list = 'graphics'
+
+
+def get_debug_against_oss():
+    return debug_against_oss
 
 
 def get_sprint_bug_summary_filename():

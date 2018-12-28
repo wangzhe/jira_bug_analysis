@@ -15,7 +15,7 @@ class TestJbaEmail(TestCase):
         with open(graphic_path + "test_" + online_bug_summary_png, "rb") as graphic_file:
             binary_img = graphic_file.read()
         graphs_full_path = [binary_img]
-        with open(database_path + "source.csv", "rb") as source_file:
+        with open(database_path + "test_source.csv", "rb") as source_file:
             online_bug_source = source_file.read()
 
         email_body = jba_email.compose_email_body(graphs_full_path, online_bug_source)

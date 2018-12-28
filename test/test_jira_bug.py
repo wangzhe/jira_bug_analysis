@@ -1,7 +1,9 @@
 import datetime
 import json
 from unittest import TestCase
+from unittest.mock import MagicMock
 
+from module import sys_invariant
 from module.storage_util import read_json_from_file
 from module.jira_bug import JiraBugList
 
@@ -9,6 +11,9 @@ from module.jira_bug import JiraBugList
 class JiraBugTest(TestCase):
     def setUp(self):
         global bugList, online_bugs
+        sys_invariant.get_debug_against_oss = MagicMock(name='debug_against_oss')
+        sys_invariant.get_debug_against_oss.return_value = False
+
         online_bugs = read_json_from_file('test_data_online_bug_unfinished.json')
         fields = self.read_field_json_data()
         bugList = JiraBugList(None, None, fields)

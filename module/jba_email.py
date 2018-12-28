@@ -85,6 +85,8 @@ class JbaEmail:
             msg_content.attach(msg_template)
             index = 0
             for graphic in graphics:
+                if graphic is None:
+                    continue
                 msg_image = MIMEImage(graphic)
                 msg_image.add_header('Content-ID', '<' + str(index) + '>')
                 index += 1

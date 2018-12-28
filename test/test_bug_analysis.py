@@ -92,6 +92,6 @@ class TestAnalysis(TestCase):
         generate_bug_unclassified_piechart(bugList)
 
     def test_write_bug_list_to_csv(self):
-        with open(database_path + online_bug_source_in_csv, "rb") as csv_file:
+        with open(database_path + "test_" + online_bug_source_in_csv, "rb") as csv_file:
             binary_csv = csv_file.read()
         self.assertEqual(binary_csv, write_bug_list_to_csv(bugList))

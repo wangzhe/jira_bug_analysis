@@ -7,12 +7,14 @@ from module.pyplot_util import bug_data_and_label_classified_in_catalog
 from module.storage_util import *
 from module.sys_invariant import date_format, show_last_n_bars, get_online_bug_summary_png_filename, \
     get_sprint_bug_summary_filename, online_bug_priority_png, online_bug_classification_png, \
-    online_bug_unclassified_png, online_bug_source_in_csv, database_path
+    online_bug_unclassified_png, online_bug_source_in_csv
 
 
 def store_count_into_file(sprint_bug_summary_filename, last_sprint_bugs_count, sprint_start_date):
     file_backup(sprint_bug_summary_filename)
     sprint_online_bug_summary_json_data = read_json_from_file(sprint_bug_summary_filename)
+    if sprint_online_bug_summary_json_data is "":
+        return ""
     sprint_online_bug_summary_json_data = append_latest_sprint_info(last_sprint_bugs_count,
                                                                     sprint_online_bug_summary_json_data,
                                                                     sprint_start_date)
@@ -21,6 +23,7 @@ def store_count_into_file(sprint_bug_summary_filename, last_sprint_bugs_count, s
 
 
 def append_latest_sprint_info(last_sprint_bugs_count, sprint_online_bug_summary_json_data, sprint_start_date):
+    debug_log_console(str(sprint_online_bug_summary_json_data))
     is_updated = False
     sprint_start_date_str = datetime.datetime.strftime(sprint_start_date, date_format["in_file"])
     for sprint_summary in sprint_online_bug_summary_json_data:
@@ -54,12 +57,14 @@ def convert_summary_into_dates_and_counts(sprint_bug_summary_json):
 def generate_bug_summary_barchart(bug_list):
     # find the latest sprint bugs
     last_sprint_bugs, sprint_start_date = get_the_last_sprint_bugs(bug_list)
-    print(sprint_start_date)
+    debug_log_console(str(sprint_start_date))
 
     # store the count into file
     sprint_bug_summary_json = store_count_into_file(get_sprint_bug_summary_filename(), len(last_sprint_bugs),
                                                     sprint_start_date)
 
+    if sprint_bug_summary_json is "":
+        return None
     # generate chart
     return generate_online_bug_summary_chart(sprint_bug_summary_json, get_online_bug_summary_png_filename())
 
@@ -139,7 +144,7 @@ def do_bug_analysis():
     debug_log_console("unclassified pie chart filename generated")
 
     online_bug_source = write_bug_list_to_csv(bug_list)
-    debug_log_console(online_bug_source)
+    debug_log_console(online_bug_source.decode("utf-8"))
 
     # final step - compose and send email
     graphics = [summary_barchart, priority_barchart, classification_piechart, unclassified_piechart]
