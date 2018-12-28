@@ -58,7 +58,7 @@ def file_backup(sprint_bug_summary_filename):
     else:
         oss_util.copy_file(sprint_bug_summary_filename,
                            sprint_bug_summary_filename.replace(".json", "") + "_" + datetime.date.today().strftime(
-                              "%m_%d_%y") + ".json")
+                               "%m_%d_%y") + ".json")
 
 
 def write_json_obj_to_file(data_filename, jsonobj):
@@ -67,7 +67,7 @@ def write_json_obj_to_file(data_filename, jsonobj):
         with open(data_filename, 'w') as outfile:
             json.dump(jsonobj, outfile)
     else:
-        oss_util.save_file_in_oss(data_filename, jsonobj.dumps())
+        oss_util.save_file_in_oss(data_filename, json.dumps(jsonobj))
 
 
 def read_json_from_file(data_filename):
@@ -128,7 +128,6 @@ def read_html_from_file(data_filename):
     with open(data_filename) as input_file:
         html_text = input_file.read()
     return html_text
-
 
 # def save_image(filename, binary_img):
 #     # only for local test

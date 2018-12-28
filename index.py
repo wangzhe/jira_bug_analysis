@@ -17,6 +17,4 @@ def handler(event, context):
     logger.info('update handler file to show handler execution - Done')
     logger.info('add default local file： ' + get_system_user() + " - Done")
     do_bug_analysis()
-
-
-print(handler(None, None))
+    return "Hello World"
