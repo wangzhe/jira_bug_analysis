@@ -31,7 +31,7 @@ def compose_search_jql_uri(next_sprint_start_date, start_at=0):
     jql_end_date = next_sprint_start_date.strftime("%Y/%m/%d")
     jql_str = "project = OBT AND created >= '" + \
               jql_start_date + "' AND created < '" + \
-              jql_end_date + "' ORDER BY created DESC"
+              jql_end_date + "' AND resolution was not Duplicate" + " ORDER BY created DESC"
     debug_log_console(jql_str)
     jql_dict = {'jql': jql_str}
     if start_at > 0:

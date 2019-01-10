@@ -21,19 +21,19 @@ class AnalysisUtilTest(TestCase):
 
     def test_compose_search_jql(self):
         expect_jql_uri = "jql=project+%3D+OBT+AND+created+%3E%3D+%272018%2F10%2F03%27+AND+created+%3C+%272018%2F10%2" \
-                         "F31%27+ORDER+BY+created+DESC"
+                         "F31%27+AND+resolution+was+not+Duplicate+ORDER+BY+created+DESC"
         search_jql_uri = compose_search_jql_uri(datetime.datetime.strptime("10/31/18", "%m/%d/%y"))
         self.assertEqual(expect_jql_uri, search_jql_uri)
 
     def test_compose_search_jql_when_startAt_is_zero(self):
         expect_jql_uri = "jql=project+%3D+OBT+AND+created+%3E%3D+%272018%2F10%2F03%27+AND+created+%3C+%272018%2F10%2" \
-                         "F31%27+ORDER+BY+created+DESC"
+                         "F31%27+AND+resolution+was+not+Duplicate+ORDER+BY+created+DESC"
         search_jql_uri = compose_search_jql_uri(datetime.datetime.strptime("10/31/18", "%m/%d/%y"), 0)
         self.assertEqual(expect_jql_uri, search_jql_uri)
 
     def test_compose_search_jql_when_startAt_is_not_zero(self):
         expect_jql_uri = "jql=project+%3D+OBT+AND+created+%3E%3D+%272018%2F10%2F03%27+AND+created+%3C+%272018%2F10%2" \
-                         "F31%27+ORDER+BY+created+DESC&startAt=50"
+                         "F31%27+AND+resolution+was+not+Duplicate+ORDER+BY+created+DESC&startAt=50"
         search_jql_uri = compose_search_jql_uri(datetime.datetime.strptime("10/31/18", "%m/%d/%y"), 50)
         self.assertEqual(expect_jql_uri, search_jql_uri)
 
