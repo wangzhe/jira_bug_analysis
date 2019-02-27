@@ -46,6 +46,7 @@ class JiraBugTest(TestCase):
         self.assertEqual("yufeng", bug_dict["bug dev"])
         self.assertEqual("winnie", bug_dict["bug qa"])
         self.assertEqual("Wrong Reported", bug_dict["bug classify"])
+        self.assertEqual("jason.law@company.co", bug_dict["bug reporter"])
         self.assertEqual("2018-10-30T16:41:03.790+0800", bug_dict["created"])
         self.assertEqual("2018-10-30T17:58:49.852+0800", bug_dict["resolved"])
         self.assertEqual("2018-10-30T16:40:00.000+0800", bug_dict["first response time"])

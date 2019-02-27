@@ -25,6 +25,7 @@ def bug_details(bug_dict, bug_fields, fields):
     bug_dict["bug dev"] = get_value_in_level_two(bug_fields, fields["Bug DEV"], "name")
     bug_dict["bug qa"] = get_value_in_level_two(bug_fields, fields["Bug QA"], "name")
     bug_dict["scrum team"] = get_value_in_level_two(bug_fields, fields["Scrum Team"], "value")
+    bug_dict["bug reporter"] = bug_fields[fields["Bug Reporter"]]
     bug_dict["created"] = bug_fields["created"]
     bug_dict["resolved"] = bug_fields["resolutiondate"]
     bug_dict["first response time"] = bug_fields[fields["First Response Time"]]
